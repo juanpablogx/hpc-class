@@ -75,10 +75,6 @@ int main(int argc, char *argv[]) {
   pthread_t threads[num_threads];
   ThreadData thread_data[num_threads];
 
-  // Medir tiempo
-  struct timespec start, end;
-  clock_gettime(CLOCK_MONOTONIC, &start);
-
   // Crear hilos
   for (int i = 0; i < num_threads; i++) {
     thread_data[i].id = i;
@@ -87,8 +83,16 @@ int main(int argc, char *argv[]) {
     thread_data[i].A = A;
     thread_data[i].B = B;
     thread_data[i].C = C;
+  } 
+  
+  // Medir tiempo
+  struct timespec start, end;
+  clock_gettime(CLOCK_MONOTONIC, &start);
+
+  // Crear hilos
+  for (int i = 0; i < num_threads; i++) {
     pthread_create(&threads[i], NULL, thread_multiply, &thread_data[i]);
-  }
+  } 
 
   // Esperar a que terminen
   for (int i = 0; i < num_threads; i++) {
