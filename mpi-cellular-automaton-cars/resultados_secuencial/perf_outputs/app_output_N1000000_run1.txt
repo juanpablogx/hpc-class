@@ -1,0 +1,12 @@
+Simulación de Tráfico - Versión Serial
+N = 1000000, Timesteps = 5000, Densidad = 0.50
+Total de carros: 499856
+
+Timestep 0: Velocidad promedio = 0.4997
+Timestep 1000: Velocidad promedio = 0.9823
+Timestep 2000: Velocidad promedio = 0.9875
+Timestep 3000: Velocidad promedio = 0.9901
+Timestep 4000: Velocidad promedio = 0.9917
+Timestep 4999: Velocidad promedio = 0.9926
+
+Tiempo total de ejecución: 17.979187 segundos

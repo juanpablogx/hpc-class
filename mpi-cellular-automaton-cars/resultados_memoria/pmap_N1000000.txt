@@ -1,0 +1,29 @@
+4793:   ./cars-sequential 1000000 5000 0.5
+Address           Kbytes     RSS   Dirty Mode  Mapping
+0000613cab385000       4       4       0 r---- cars-sequential
+0000613cab386000       4       4       0 r-x-- cars-sequential
+0000613cab387000       4       4       0 r---- cars-sequential
+0000613cab388000       4       4       4 r---- cars-sequential
+0000613cab389000       4       4       4 rw--- cars-sequential
+0000613cb50cb000     132       8       8 rw---   [ anon ]
+00007cb17205e000    7816    7816    7816 rw---   [ anon ]
+00007cb172800000     160     160       0 r---- libc.so.6
+00007cb172828000    1620    1108       0 r-x-- libc.so.6
+00007cb1729bd000     352     192       0 r---- libc.so.6
+00007cb172a15000       4       0       0 ----- libc.so.6
+00007cb172a16000      16      16      16 r---- libc.so.6
+00007cb172a1a000       8       8       8 rw--- libc.so.6
+00007cb172a1c000      52      20      20 rw---   [ anon ]
+00007cb172c1c000      12       8       8 rw---   [ anon ]
+00007cb172c25000       8       4       4 rw---   [ anon ]
+00007cb172c27000       8       8       0 r---- ld-linux-x86-64.so.2
+00007cb172c29000     168     168       0 r-x-- ld-linux-x86-64.so.2
+00007cb172c53000      44      44       0 r---- ld-linux-x86-64.so.2
+00007cb172c5f000       8       8       8 r---- ld-linux-x86-64.so.2
+00007cb172c61000       8       8       8 rw--- ld-linux-x86-64.so.2
+00007ffc4f884000     132      16      16 rw---   [ stack ]
+00007ffc4f920000      16       0       0 r----   [ anon ]
+00007ffc4f924000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+total kB           10596    9616    7920

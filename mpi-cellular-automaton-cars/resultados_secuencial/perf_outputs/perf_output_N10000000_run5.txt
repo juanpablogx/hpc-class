@@ -1,0 +1,16 @@
+# started on Tue Dec  2 22:21:30 2025
+
+
+ Performance counter stats for './cars-sequential 10000000 5000 0.5':
+
+   <not supported>      cycles                                                                
+   <not supported>      instructions                                                          
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+
+     182.915087198 seconds time elapsed
+
+     182.857503000 seconds user
+       0.045498000 seconds sys
+
+
