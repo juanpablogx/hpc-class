@@ -7,7 +7,7 @@ NUM_RUNS=5
 RESULTS_DIR="resultados_mpi"
 
 # Parámetros de la simulación
-N=10000              # Tamaño de la carretera
+N_SIZES=(1000 2000 4000 8000 12000)  # Tamaños de carretera a probar
 TIMESTEPS=5000       # Número de iteraciones
 DENSITY=0.5          # Densidad de carros
 
@@ -45,7 +45,7 @@ LOG_FILE="$RESULTS_DIR/test_log.txt"
 echo "Inicio de pruebas: $(date)" > "$LOG_FILE"
 echo "Hosts utilizados: $HOSTS" >> "$LOG_FILE"
 echo "Parámetros de simulación:" >> "$LOG_FILE"
-echo "  N (tamaño carretera): $N" >> "$LOG_FILE"
+echo "  N (tamaños carretera): ${N_SIZES[@]}" >> "$LOG_FILE"
 echo "  Timesteps: $TIMESTEPS" >> "$LOG_FILE"
 echo "  Densidad: $DENSITY" >> "$LOG_FILE"
 echo "Número de procesos: ${NUM_PROCESSES[@]}" >> "$LOG_FILE"
@@ -63,12 +63,15 @@ extract_time() {
 # ============================================================================
 # PRUEBAS ASÍNCRONAS (sync_mode = 0)
 # ============================================================================
-echo -e "\n${BLUE}========================================${NC}"
-echo -e "${BLUE}    PRUEBAS ASÍNCRONAS (MPI_Isend/Irecv)${NC}"
-echo -e "${BLUE}========================================${NC}"
 
-CSV_ASYNC="$RESULTS_DIR/resultados_asincrono.csv"
-echo "Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CSV_ASYNC"
+# Iterar sobre cada tamaño de N
+for N in "${N_SIZES[@]}"; do
+    echo -e "\n${BLUE}========================================${NC}"
+    echo -e "${BLUE}    PRUEBAS ASÍNCRONAS - N=$N${NC}"
+    echo -e "${BLUE}========================================${NC}"
+    
+    CSV_ASYNC="$RESULTS_DIR/resultados_asincrono_N${N}.csv"
+    echo "Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CSV_ASYNC"
 
 for np in "${NUM_PROCESSES[@]}"; do
     echo -e "\n${YELLOW}=== Modo ASÍNCRONO con $np procesos ===${NC}"
@@ -108,17 +111,22 @@ for np in "${NUM_PROCESSES[@]}"; do
     done
 done
 
-echo -e "${GREEN}Resultados asíncronos guardados en: $CSV_ASYNC${NC}"
+echo -e "${GREEN}Resultados asíncronos para N=$N guardados en: $CSV_ASYNC${NC}"
+
+done  # Fin del loop de N_SIZES para asíncrono
 
 # ============================================================================
 # PRUEBAS SÍNCRONAS (sync_mode = 1)
 # ============================================================================
-echo -e "\n${BLUE}========================================${NC}"
-echo -e "${BLUE}    PRUEBAS SÍNCRONAS (MPI_Send/Recv)${NC}"
-echo -e "${BLUE}========================================${NC}"
 
-CSV_SYNC="$RESULTS_DIR/resultados_sincrono.csv"
-echo "Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CSV_SYNC"
+# Iterar sobre cada tamaño de N
+for N in "${N_SIZES[@]}"; do
+    echo -e "\n${BLUE}========================================${NC}"
+    echo -e "${BLUE}    PRUEBAS SÍNCRONAS - N=$N${NC}"
+    echo -e "${BLUE}========================================${NC}"
+    
+    CSV_SYNC="$RESULTS_DIR/resultados_sincrono_N${N}.csv"
+    echo "Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CSV_SYNC"
 
 for np in "${NUM_PROCESSES[@]}"; do
     echo -e "\n${YELLOW}=== Modo SÍNCRONO con $np procesos ===${NC}"
@@ -158,7 +166,9 @@ for np in "${NUM_PROCESSES[@]}"; do
     done
 done
 
-echo -e "${GREEN}Resultados síncronos guardados en: $CSV_SYNC${NC}"
+echo -e "${GREEN}Resultados síncronos para N=$N guardados en: $CSV_SYNC${NC}"
+
+done  # Fin del loop de N_SIZES para síncrono
 
 # ============================================================================
 # GENERAR ESTADÍSTICAS
@@ -166,56 +176,72 @@ echo -e "${GREEN}Resultados síncronos guardados en: $CSV_SYNC${NC}"
 echo -e "\n${YELLOW}=== Generando estadísticas resumidas ===${NC}"
 
 STATS_FILE="$RESULTS_DIR/estadisticas.csv"
-echo "Modo,Num_Procesos,Tiempo_Promedio,Tiempo_Min,Tiempo_Max,Desviacion_Std" > "$STATS_FILE"
+echo "Modo,Tamaño_N,Num_Procesos,Tiempo_Promedio,Tiempo_Min,Tiempo_Max,Desviacion_Std" > "$STATS_FILE"
 
-# Estadísticas para modo asíncrono
-for np in "${NUM_PROCESSES[@]}"; do
-    times=$(grep "^$np," "$CSV_ASYNC" | cut -d',' -f3)
+# Estadísticas para modo asíncrono - iterar sobre cada N
+for N in "${N_SIZES[@]}"; do
+    CSV_FILE="$RESULTS_DIR/resultados_asincrono_N${N}.csv"
     
-    if [ -z "$times" ]; then
+    if [ ! -f "$CSV_FILE" ]; then
         continue
     fi
     
-    stats=$(echo "$times" | awk '
-    {
-        sum += $1
-        sumsq += ($1)^2
-        if (NR == 1 || $1 < min) min = $1
-        if (NR == 1 || $1 > max) max = $1
-        count++
-    }
-    END {
-        avg = sum / count
-        std = sqrt((sumsq / count) - (avg^2))
-        printf "%.6f,%.6f,%.6f,%.6f", avg, min, max, std
-    }')
-    
-    echo "ASINCRONO,$np,$stats" >> "$STATS_FILE"
+    for np in "${NUM_PROCESSES[@]}"; do
+        times=$(grep "^$np," "$CSV_FILE" | cut -d',' -f3)
+        
+        if [ -z "$times" ]; then
+            continue
+        fi
+        
+        stats=$(echo "$times" | awk '
+        {
+            sum += $1
+            sumsq += ($1)^2
+            if (NR == 1 || $1 < min) min = $1
+            if (NR == 1 || $1 > max) max = $1
+            count++
+        }
+        END {
+            avg = sum / count
+            std = sqrt((sumsq / count) - (avg^2))
+            printf "%.6f,%.6f,%.6f,%.6f", avg, min, max, std
+        }')
+        
+        echo "ASINCRONO,$N,$np,$stats" >> "$STATS_FILE"
+    done
 done
 
-# Estadísticas para modo síncrono
-for np in "${NUM_PROCESSES[@]}"; do
-    times=$(grep "^$np," "$CSV_SYNC" | cut -d',' -f3)
+# Estadísticas para modo síncrono - iterar sobre cada N
+for N in "${N_SIZES[@]}"; do
+    CSV_FILE="$RESULTS_DIR/resultados_sincrono_N${N}.csv"
     
-    if [ -z "$times" ]; then
+    if [ ! -f "$CSV_FILE" ]; then
         continue
     fi
     
-    stats=$(echo "$times" | awk '
-    {
-        sum += $1
-        sumsq += ($1)^2
-        if (NR == 1 || $1 < min) min = $1
-        if (NR == 1 || $1 > max) max = $1
-        count++
-    }
-    END {
-        avg = sum / count
-        std = sqrt((sumsq / count) - (avg^2))
-        printf "%.6f,%.6f,%.6f,%.6f", avg, min, max, std
-    }')
-    
-    echo "SINCRONO,$np,$stats" >> "$STATS_FILE"
+    for np in "${NUM_PROCESSES[@]}"; do
+        times=$(grep "^$np," "$CSV_FILE" | cut -d',' -f3)
+        
+        if [ -z "$times" ]; then
+            continue
+        fi
+        
+        stats=$(echo "$times" | awk '
+        {
+            sum += $1
+            sumsq += ($1)^2
+            if (NR == 1 || $1 < min) min = $1
+            if (NR == 1 || $1 > max) max = $1
+            count++
+        }
+        END {
+            avg = sum / count
+            std = sqrt((sumsq / count) - (avg^2))
+            printf "%.6f,%.6f,%.6f,%.6f", avg, min, max, std
+        }')
+        
+        echo "SINCRONO,$N,$np,$stats" >> "$STATS_FILE"
+    done
 done
 
 echo -e "${GREEN}Estadísticas guardadas en: $STATS_FILE${NC}"
@@ -225,21 +251,31 @@ echo -e "${GREEN}Estadísticas guardadas en: $STATS_FILE${NC}"
 # ============================================================================
 echo -e "\n${YELLOW}=== Creando archivo CSV consolidado ===${NC}"
 CONSOLIDATED_CSV="$RESULTS_DIR/resultados_consolidados.csv"
-echo "Modo,Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CONSOLIDATED_CSV"
+echo "Modo,Tamaño_N,Num_Procesos,Ejecucion,Tiempo_Segundos" > "$CONSOLIDATED_CSV"
 
-# Agregar resultados asíncronos
-while IFS=',' read -r np run time; do
-    if [ "$np" != "Num_Procesos" ]; then
-        echo "ASINCRONO,$np,$run,$time" >> "$CONSOLIDATED_CSV"
+# Agregar resultados asíncronos de todos los tamaños N
+for N in "${N_SIZES[@]}"; do
+    CSV_FILE="$RESULTS_DIR/resultados_asincrono_N${N}.csv"
+    if [ -f "$CSV_FILE" ]; then
+        while IFS=',' read -r np run time; do
+            if [ "$np" != "Num_Procesos" ]; then
+                echo "ASINCRONO,$N,$np,$run,$time" >> "$CONSOLIDATED_CSV"
+            fi
+        done < "$CSV_FILE"
     fi
-done < "$CSV_ASYNC"
+done
 
-# Agregar resultados síncronos
-while IFS=',' read -r np run time; do
-    if [ "$np" != "Num_Procesos" ]; then
-        echo "SINCRONO,$np,$run,$time" >> "$CONSOLIDATED_CSV"
+# Agregar resultados síncronos de todos los tamaños N
+for N in "${N_SIZES[@]}"; do
+    CSV_FILE="$RESULTS_DIR/resultados_sincrono_N${N}.csv"
+    if [ -f "$CSV_FILE" ]; then
+        while IFS=',' read -r np run time; do
+            if [ "$np" != "Num_Procesos" ]; then
+                echo "SINCRONO,$N,$np,$run,$time" >> "$CONSOLIDATED_CSV"
+            fi
+        done < "$CSV_FILE"
     fi
-done < "$CSV_SYNC"
+done
 
 echo -e "${GREEN}Archivo consolidado creado: $CONSOLIDATED_CSV${NC}"
 
@@ -251,19 +287,19 @@ echo -e "${GREEN}          RESUMEN FINAL${NC}"
 echo -e "${GREEN}========================================${NC}"
 echo "Fin de pruebas: $(date)" >> "$LOG_FILE"
 echo -e "${GREEN}Configuración de pruebas:${NC}"
-echo -e "  N (carretera): $N"
+echo -e "  Tamaños N: ${N_SIZES[@]}"
 echo -e "  Timesteps: $TIMESTEPS"
 echo -e "  Densidad: $DENSITY"
 echo -e "  Hosts: $HOSTS"
-echo -e "\n${GREEN}Total de configuraciones probadas: $((${#NUM_PROCESSES[@]} * 2))${NC}"
-echo -e "${GREEN}Total de ejecuciones: $((${#NUM_PROCESSES[@]} * 2 * $NUM_RUNS))${NC}"
+echo -e "\n${GREEN}Total de configuraciones probadas: $((${#N_SIZES[@]} * ${#NUM_PROCESSES[@]} * 2))${NC}"
+echo -e "${GREEN}Total de ejecuciones: $((${#N_SIZES[@]} * ${#NUM_PROCESSES[@]} * 2 * $NUM_RUNS))${NC}"
 echo -e "${GREEN}Resultados guardados en: $RESULTS_DIR${NC}"
 echo ""
 echo "Archivos generados:"
-echo "  - resultados_asincrono.csv (tiempos modo asíncrono)"
-echo "  - resultados_sincrono.csv (tiempos modo síncrono)"
+echo "  - resultados_asincrono_N<tamaño>.csv (tiempos asíncronos por N)"
+echo "  - resultados_sincrono_N<tamaño>.csv (tiempos síncronos por N)"
 echo "  - resultados_consolidados.csv (todos los datos)"
-echo "  - estadisticas.csv (promedios y estadísticas por modo)"
+echo "  - estadisticas.csv (promedios y estadísticas por modo y N)"
 echo "  - test_log.txt (log detallado de ejecución)"
 echo ""
 echo -e "${YELLOW}Para visualizar las estadísticas:${NC}"

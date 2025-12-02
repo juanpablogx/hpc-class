@@ -6,7 +6,7 @@ NUM_RUNS=5
 RESULTS_DIR="resultados_secuencial"
 
 # Parámetros de la simulación
-N=10000              # Tamaño de la carretera
+N_SIZES=(1000 2000 4000 8000 12000)  # Tamaños de carretera a probar
 TIMESTEPS=5000       # Número de iteraciones
 DENSITY=0.5          # Densidad de carros
 
@@ -42,22 +42,35 @@ fi
 mkdir -p "$RESULTS_DIR"
 echo -e "${GREEN}Directorio de resultados creado: $RESULTS_DIR${NC}"
 
-# Crear archivo CSV
-CSV_FILE="$RESULTS_DIR/resultados_secuencial.csv"
-echo "Ejecucion,Tiempo_Codigo_Segundos,Tiempo_Perf_Segundos,Ciclos,Instrucciones,IPC,Cache_References,Cache_Misses,Cache_Miss_Rate" > "$CSV_FILE"
+# Crear subdirectorio para archivos de perf
+PERF_DIR="$RESULTS_DIR/perf_outputs"
+mkdir -p "$PERF_DIR"
+echo -e "${GREEN}Subdirectorio para perf creado: $PERF_DIR${NC}"
 
 # Crear archivo de log
 LOG_FILE="$RESULTS_DIR/test_log.txt"
 echo "Inicio de pruebas: $(date)" > "$LOG_FILE"
 echo "Parámetros de simulación:" >> "$LOG_FILE"
-echo "  N (tamaño carretera): $N" >> "$LOG_FILE"
+echo "  N (tamaños carretera): ${N_SIZES[@]}" >> "$LOG_FILE"
 echo "  Timesteps: $TIMESTEPS" >> "$LOG_FILE"
 echo "  Densidad: $DENSITY" >> "$LOG_FILE"
-echo "Número de ejecuciones: $NUM_RUNS" >> "$LOG_FILE"
+echo "Número de ejecuciones por tamaño: $NUM_RUNS" >> "$LOG_FILE"
 echo "----------------------------------------" >> "$LOG_FILE"
 
 echo -e "\n${BLUE}=== Ejecutando pruebas con perf ===${NC}"
-echo -e "${YELLOW}Parámetros: N=$N, Timesteps=$TIMESTEPS, Density=$DENSITY${NC}\n"
+echo -e "${YELLOW}Parámetros: Timesteps=$TIMESTEPS, Density=$DENSITY${NC}\n"
+
+# Iterar sobre cada tamaño de N
+for N in "${N_SIZES[@]}"; do
+    echo -e "\n${BLUE}========================================${NC}"
+    echo -e "${BLUE}    PRUEBAS CON N=$N${NC}"
+    echo -e "${BLUE}========================================${NC}"
+    
+    # Crear archivo CSV para este tamaño N
+    CSV_FILE="$RESULTS_DIR/resultados_N${N}.csv"
+    echo "Ejecucion,Tiempo_Codigo_Segundos,Tiempo_Perf_Segundos,Ciclos,Instrucciones,IPC,Cache_References,Cache_Misses,Cache_Miss_Rate" > "$CSV_FILE"
+    
+    echo -e "${YELLOW}Tamaño de carretera N=$N${NC}"
 
 # Función para extraer el tiempo del código
 extract_code_time() {
@@ -104,8 +117,8 @@ extract_perf_metrics() {
 for run in $(seq 1 $NUM_RUNS); do
     echo -e "${YELLOW}=== Ejecución $run/$NUM_RUNS ===${NC}"
     
-    PERF_OUTPUT="$RESULTS_DIR/perf_output_run${run}.txt"
-    APP_OUTPUT="$RESULTS_DIR/app_output_run${run}.txt"
+    PERF_OUTPUT="$PERF_DIR/perf_output_N${N}_run${run}.txt"
+    APP_OUTPUT="$PERF_DIR/app_output_N${N}_run${run}.txt"
     
     # Ejecutar con perf
     echo -ne "  Ejecutando con perf... "
@@ -162,6 +175,10 @@ for run in $(seq 1 $NUM_RUNS); do
     echo "========================================" >> "$LOG_FILE"
 done
 
+echo -e "${GREEN}Resultados para N=$N guardados en: $CSV_FILE${NC}"
+
+done  # Fin del loop de N_SIZES
+
 # Generar estadísticas
 echo -e "\n${YELLOW}=== Generando estadísticas ===${NC}"
 
@@ -171,84 +188,100 @@ echo "Estadísticas de Ejecución Secuencial con Perf" > "$STATS_FILE"
 echo "=============================================" >> "$STATS_FILE"
 echo "" >> "$STATS_FILE"
 
-# Estadísticas de tiempo del código
-times_code=$(tail -n +2 "$CSV_FILE" | cut -d',' -f2)
-stats_code=$(echo "$times_code" | awk '
-{
-    sum += $1
-    sumsq += ($1)^2
-    if (NR == 1 || $1 < min) min = $1
-    if (NR == 1 || $1 > max) max = $1
-    count++
-}
-END {
-    avg = sum / count
-    std = sqrt((sumsq / count) - (avg^2))
-    printf "Promedio: %.6f s\nMínimo:   %.6f s\nMáximo:   %.6f s\nDesv Std: %.6f s\n", avg, min, max, std
-}')
-
-echo "TIEMPO DEL CÓDIGO (clock()):" >> "$STATS_FILE"
-echo "$stats_code" >> "$STATS_FILE"
-echo "" >> "$STATS_FILE"
-
-# Estadísticas de tiempo de perf
-times_perf=$(tail -n +2 "$CSV_FILE" | cut -d',' -f3)
-stats_perf=$(echo "$times_perf" | awk '
-{
-    sum += $1
-    sumsq += ($1)^2
-    if (NR == 1 || $1 < min) min = $1
-    if (NR == 1 || $1 > max) max = $1
-    count++
-}
-END {
-    avg = sum / count
-    std = sqrt((sumsq / count) - (avg^2))
-    printf "Promedio: %.6f s\nMínimo:   %.6f s\nMáximo:   %.6f s\nDesv Std: %.6f s\n", avg, min, max, std
-}')
-
-echo "TIEMPO DE PERF (time elapsed):" >> "$STATS_FILE"
-echo "$stats_perf" >> "$STATS_FILE"
-echo "" >> "$STATS_FILE"
-
-# Estadísticas de IPC
-ipc_values=$(tail -n +2 "$CSV_FILE" | cut -d',' -f6 | grep -v "^$")
-if [ -n "$ipc_values" ]; then
-    stats_ipc=$(echo "$ipc_values" | awk '
-    {
-        sum += $1
-        if (NR == 1 || $1 < min) min = $1
-        if (NR == 1 || $1 > max) max = $1
-        count++
-    }
-    END {
-        avg = sum / count
-        printf "Promedio: %.4f\nMínimo:   %.4f\nMáximo:   %.4f\n", avg, min, max
-    }')
+# Iterar sobre cada tamaño N para generar estadísticas
+for N in "${N_SIZES[@]}"; do
+    CSV_FILE="$RESULTS_DIR/resultados_N${N}.csv"
     
-    echo "IPC (Instructions Per Cycle):" >> "$STATS_FILE"
-    echo "$stats_ipc" >> "$STATS_FILE"
+    if [ ! -f "$CSV_FILE" ]; then
+        continue
+    fi
+    
+    echo "================================" >> "$STATS_FILE"
+    echo "TAMAÑO N = $N" >> "$STATS_FILE"
+    echo "================================" >> "$STATS_FILE"
     echo "" >> "$STATS_FILE"
-fi
-
-# Estadísticas de Cache Miss Rate
-cache_miss_rates=$(tail -n +2 "$CSV_FILE" | cut -d',' -f9 | grep -v "^$")
-if [ -n "$cache_miss_rates" ]; then
-    stats_cache=$(echo "$cache_miss_rates" | awk '
+    
+    # Estadísticas de tiempo del código
+    times_code=$(tail -n +2 "$CSV_FILE" | cut -d',' -f2)
+    stats_code=$(echo "$times_code" | awk '
     {
         sum += $1
+        sumsq += ($1)^2
         if (NR == 1 || $1 < min) min = $1
         if (NR == 1 || $1 > max) max = $1
         count++
     }
     END {
         avg = sum / count
-        printf "Promedio: %.4f %%\nMínimo:   %.4f %%\nMáximo:   %.4f %%\n", avg, min, max
+        std = sqrt((sumsq / count) - (avg^2))
+        printf "Promedio: %.6f s\nMínimo:   %.6f s\nMáximo:   %.6f s\nDesv Std: %.6f s\n", avg, min, max, std
     }')
     
-    echo "CACHE MISS RATE:" >> "$STATS_FILE"
-    echo "$stats_cache" >> "$STATS_FILE"
-fi
+    echo "TIEMPO DEL CÓDIGO (clock()):" >> "$STATS_FILE"
+    echo "$stats_code" >> "$STATS_FILE"
+    echo "" >> "$STATS_FILE"
+    
+    # Estadísticas de tiempo de perf
+    times_perf=$(tail -n +2 "$CSV_FILE" | cut -d',' -f3)
+    stats_perf=$(echo "$times_perf" | awk '
+    {
+        sum += $1
+        sumsq += ($1)^2
+        if (NR == 1 || $1 < min) min = $1
+        if (NR == 1 || $1 > max) max = $1
+        count++
+    }
+    END {
+        avg = sum / count
+        std = sqrt((sumsq / count) - (avg^2))
+        printf "Promedio: %.6f s\nMínimo:   %.6f s\nMáximo:   %.6f s\nDesv Std: %.6f s\n", avg, min, max, std
+    }')
+    
+    echo "TIEMPO DE PERF (time elapsed):" >> "$STATS_FILE"
+    echo "$stats_perf" >> "$STATS_FILE"
+    echo "" >> "$STATS_FILE"
+    
+    # Estadísticas de IPC
+    ipc_values=$(tail -n +2 "$CSV_FILE" | cut -d',' -f6 | grep -v "^$")
+    if [ -n "$ipc_values" ]; then
+        stats_ipc=$(echo "$ipc_values" | awk '
+        {
+            sum += $1
+            if (NR == 1 || $1 < min) min = $1
+            if (NR == 1 || $1 > max) max = $1
+            count++
+        }
+        END {
+            avg = sum / count
+            printf "Promedio: %.4f\nMínimo:   %.4f\nMáximo:   %.4f\n", avg, min, max
+        }')
+        
+        echo "IPC (Instructions Per Cycle):" >> "$STATS_FILE"
+        echo "$stats_ipc" >> "$STATS_FILE"
+        echo "" >> "$STATS_FILE"
+    fi
+    
+    # Estadísticas de Cache Miss Rate
+    cache_miss_rates=$(tail -n +2 "$CSV_FILE" | cut -d',' -f9 | grep -v "^$")
+    if [ -n "$cache_miss_rates" ]; then
+        stats_cache=$(echo "$cache_miss_rates" | awk '
+        {
+            sum += $1
+            if (NR == 1 || $1 < min) min = $1
+            if (NR == 1 || $1 > max) max = $1
+            count++
+        }
+        END {
+            avg = sum / count
+            printf "Promedio: %.4f %%\nMínimo:   %.4f %%\nMáximo:   %.4f %%\n", avg, min, max
+        }')
+        
+        echo "CACHE MISS RATE:" >> "$STATS_FILE"
+        echo "$stats_cache" >> "$STATS_FILE"
+    fi
+    
+    echo "" >> "$STATS_FILE"
+done
 
 echo -e "${GREEN}Estadísticas guardadas en: $STATS_FILE${NC}"
 
@@ -257,20 +290,23 @@ echo -e "\n${GREEN}========================================${NC}"
 echo -e "${GREEN}          RESUMEN FINAL${NC}"
 echo -e "${GREEN}========================================${NC}"
 echo "Fin de pruebas: $(date)" >> "$LOG_FILE"
-echo -e "${GREEN}Total de ejecuciones: $NUM_RUNS${NC}"
+echo -e "${GREEN}Tamaños de carretera probados: ${N_SIZES[@]}${NC}"
+echo -e "${GREEN}Total de ejecuciones por tamaño: $NUM_RUNS${NC}"
+echo -e "${GREEN}Total de ejecuciones: $((${#N_SIZES[@]} * $NUM_RUNS))${NC}"
 echo -e "${GREEN}Resultados guardados en: $RESULTS_DIR${NC}"
 echo ""
 echo "Archivos generados:"
-echo "  - resultados_secuencial.csv (tiempos y métricas)"
-echo "  - estadisticas.txt (resumen estadístico)"
+echo "  - resultados_N<tamaño>.csv (tiempos y métricas por cada N)"
+echo "  - estadisticas.txt (resumen estadístico de todos los tamaños)"
 echo "  - test_log.txt (log detallado)"
-echo "  - perf_output_runX.txt (salida de perf por ejecución)"
-echo "  - app_output_runX.txt (salida del programa por ejecución)"
+echo "  - perf_outputs/ (directorio con salidas de perf y aplicación)"
+echo "      * perf_output_N<tamaño>_runX.txt"
+echo "      * app_output_N<tamaño>_runX.txt"
 echo ""
 echo -e "${YELLOW}Para ver las estadísticas:${NC}"
 echo "  cat $STATS_FILE"
 echo ""
-echo -e "${YELLOW}Para ver el CSV:${NC}"
-echo "  cat $CSV_FILE"
+echo -e "${YELLOW}Para ver un CSV específico:${NC}"
+echo "  cat $RESULTS_DIR/resultados_N1000.csv"
 echo "  # o formateado:"
-echo "  column -t -s',' $CSV_FILE"
+echo "  column -t -s',' $RESULTS_DIR/resultados_N1000.csv"
