@@ -1,0 +1,88 @@
+Estadísticas de Ejecución Secuencial con Perf
+=============================================
+
+================================
+TAMAÑO N = 1000
+================================
+
+TIEMPO DEL CÓDIGO (clock()):
+Promedio: 0.016820 s
+Mínimo:   0.016763 s
+Máximo:   0.016877 s
+Desv Std: 0.000039 s
+
+TIEMPO DE PERF (time elapsed):
+Promedio: 0.017855 s
+Mínimo:   0.017666 s
+Máximo:   0.018458 s
+Desv Std: 0.000305 s
+
+
+================================
+TAMAÑO N = 2000
+================================
+
+TIEMPO DEL CÓDIGO (clock()):
+Promedio: 0.033755 s
+Mínimo:   0.033067 s
+Máximo:   0.033949 s
+Desv Std: 0.000344 s
+
+TIEMPO DE PERF (time elapsed):
+Promedio: 0.034625 s
+Mínimo:   0.034031 s
+Máximo:   0.034854 s
+Desv Std: 0.000302 s
+
+
+================================
+TAMAÑO N = 4000
+================================
+
+TIEMPO DEL CÓDIGO (clock()):
+Promedio: 0.066198 s
+Mínimo:   0.066137 s
+Máximo:   0.066252 s
+Desv Std: 0.000042 s
+
+TIEMPO DE PERF (time elapsed):
+Promedio: 0.067097 s
+Mínimo:   0.067012 s
+Máximo:   0.067186 s
+Desv Std: 0.000074 s
+
+
+================================
+TAMAÑO N = 8000
+================================
+
+TIEMPO DEL CÓDIGO (clock()):
+Promedio: 0.132818 s
+Mínimo:   0.132628 s
+Máximo:   0.133523 s
+Desv Std: 0.000353 s
+
+TIEMPO DE PERF (time elapsed):
+Promedio: 0.133796 s
+Mínimo:   0.133548 s
+Máximo:   0.134581 s
+Desv Std: 0.000394 s
+
+
+================================
+TAMAÑO N = 12000
+================================
+
+TIEMPO DEL CÓDIGO (clock()):
+Promedio: 0.209000 s
+Mínimo:   0.198602 s
+Máximo:   0.248381 s
+Desv Std: 0.019705 s
+
+TIEMPO DE PERF (time elapsed):
+Promedio: 0.210117 s
+Mínimo:   0.199710 s
+Máximo:   0.249473 s
+Desv Std: 0.019692 s
+
+

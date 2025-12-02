@@ -1,0 +1,6 @@
+Ejecucion,Tiempo_Codigo_Segundos,Tiempo_Perf_Segundos,Ciclos,Instrucciones,IPC,Cache_References,Cache_Misses,Cache_Miss_Rate
+1,0.033067,0.034031214,<not,<not,,<not,<not,
+2,0.033933,0.034853887,<not,<not,,<not,<not,
+3,0.033935,0.034784301,<not,<not,,<not,<not,
+4,0.033890,0.034685459,<not,<not,,<not,<not,
+5,0.033949,0.034770036,<not,<not,,<not,<not,

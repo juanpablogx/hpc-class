@@ -1,0 +1,3760 @@
+Inicio de pruebas: Tue Dec  2 03:22:30 UTC 2025
+Hosts utilizados: wn1,wn2,wn3
+Parámetros de simulación:
+  N (tamaños carretera): 1000 2000 4000 8000 12000
+  Timesteps: 5000
+  Densidad: 0.5
+Número de procesos: 2 4 6 8 10
+Número de ejecuciones por configuración: 5
+----------------------------------------
+=== ASYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 478
+
+Timestep 0: Velocidad promedio = 0.5293
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.123110 segundos
+===================================================
+EXITO ASYNC: np=2, run=1, time=1.123110
+=== ASYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 500
+
+Timestep 0: Velocidad promedio = 0.5120
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.220642 segundos
+===================================================
+EXITO ASYNC: np=2, run=2, time=1.220642
+=== ASYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 537
+
+Timestep 0: Velocidad promedio = 0.4655
+Timestep 1000: Velocidad promedio = 0.8622
+Timestep 2000: Velocidad promedio = 0.8622
+Timestep 3000: Velocidad promedio = 0.8622
+Timestep 4000: Velocidad promedio = 0.8622
+Timestep 4999: Velocidad promedio = 0.8622
+
+Tiempo total de ejecución: 1.557565 segundos
+===================================================
+EXITO ASYNC: np=2, run=3, time=1.557565
+=== ASYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 506
+
+Timestep 0: Velocidad promedio = 0.4802
+Timestep 1000: Velocidad promedio = 0.9763
+Timestep 2000: Velocidad promedio = 0.9763
+Timestep 3000: Velocidad promedio = 0.9763
+Timestep 4000: Velocidad promedio = 0.9763
+Timestep 4999: Velocidad promedio = 0.9763
+
+Tiempo total de ejecución: 1.018419 segundos
+===================================================
+EXITO ASYNC: np=2, run=4, time=1.018419
+=== ASYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 507
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 0.9724
+Timestep 2000: Velocidad promedio = 0.9724
+Timestep 3000: Velocidad promedio = 0.9724
+Timestep 4000: Velocidad promedio = 0.9724
+Timestep 4999: Velocidad promedio = 0.9724
+
+Tiempo total de ejecución: 1.217136 segundos
+===================================================
+EXITO ASYNC: np=2, run=5, time=1.217136
+=== ASYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 495
+
+Timestep 0: Velocidad promedio = 0.5051
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.081383 segundos
+===================================================
+EXITO ASYNC: np=4, run=1, time=1.081383
+=== ASYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 526
+
+Timestep 0: Velocidad promedio = 0.4962
+Timestep 1000: Velocidad promedio = 0.9011
+Timestep 2000: Velocidad promedio = 0.9011
+Timestep 3000: Velocidad promedio = 0.9011
+Timestep 4000: Velocidad promedio = 0.9011
+Timestep 4999: Velocidad promedio = 0.9011
+
+Tiempo total de ejecución: 0.978785 segundos
+===================================================
+EXITO ASYNC: np=4, run=2, time=0.978785
+=== ASYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 496
+
+Timestep 0: Velocidad promedio = 0.5141
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.940641 segundos
+===================================================
+EXITO ASYNC: np=4, run=3, time=0.940641
+=== ASYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 506
+
+Timestep 0: Velocidad promedio = 0.4743
+Timestep 1000: Velocidad promedio = 0.9763
+Timestep 2000: Velocidad promedio = 0.9763
+Timestep 3000: Velocidad promedio = 0.9763
+Timestep 4000: Velocidad promedio = 0.9763
+Timestep 4999: Velocidad promedio = 0.9763
+
+Tiempo total de ejecución: 1.315136 segundos
+===================================================
+EXITO ASYNC: np=4, run=4, time=1.315136
+=== ASYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 491
+
+Timestep 0: Velocidad promedio = 0.5214
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.046334 segundos
+===================================================
+EXITO ASYNC: np=4, run=5, time=1.046334
+=== ASYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 484
+
+Timestep 0: Velocidad promedio = 0.5517
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.703073 segundos
+===================================================
+EXITO ASYNC: np=6, run=1, time=1.703073
+=== ASYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 479
+
+Timestep 0: Velocidad promedio = 0.5136
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.297282 segundos
+===================================================
+EXITO ASYNC: np=6, run=2, time=1.297282
+=== ASYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 490
+
+Timestep 0: Velocidad promedio = 0.5306
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.890583 segundos
+===================================================
+EXITO ASYNC: np=6, run=3, time=1.890583
+=== ASYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 497
+
+Timestep 0: Velocidad promedio = 0.5091
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.668014 segundos
+===================================================
+EXITO ASYNC: np=6, run=4, time=1.668014
+=== ASYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 487
+
+Timestep 0: Velocidad promedio = 0.5318
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.478778 segundos
+===================================================
+EXITO ASYNC: np=6, run=5, time=1.478778
+=== ASYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 506
+
+Timestep 0: Velocidad promedio = 0.4842
+Timestep 1000: Velocidad promedio = 0.9763
+Timestep 2000: Velocidad promedio = 0.9763
+Timestep 3000: Velocidad promedio = 0.9763
+Timestep 4000: Velocidad promedio = 0.9763
+Timestep 4999: Velocidad promedio = 0.9763
+
+Tiempo total de ejecución: 9.988454 segundos
+===================================================
+EXITO ASYNC: np=8, run=1, time=9.988454
+=== ASYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 517
+
+Timestep 0: Velocidad promedio = 0.4874
+Timestep 1000: Velocidad promedio = 0.9342
+Timestep 2000: Velocidad promedio = 0.9342
+Timestep 3000: Velocidad promedio = 0.9342
+Timestep 4000: Velocidad promedio = 0.9342
+Timestep 4999: Velocidad promedio = 0.9342
+
+Tiempo total de ejecución: 9.818021 segundos
+===================================================
+EXITO ASYNC: np=8, run=2, time=9.818021
+=== ASYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 493
+
+Timestep 0: Velocidad promedio = 0.5132
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.014988 segundos
+===================================================
+EXITO ASYNC: np=8, run=3, time=10.014988
+=== ASYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 512
+
+Timestep 0: Velocidad promedio = 0.5215
+Timestep 1000: Velocidad promedio = 0.9531
+Timestep 2000: Velocidad promedio = 0.9531
+Timestep 3000: Velocidad promedio = 0.9531
+Timestep 4000: Velocidad promedio = 0.9531
+Timestep 4999: Velocidad promedio = 0.9531
+
+Tiempo total de ejecución: 10.217060 segundos
+===================================================
+EXITO ASYNC: np=8, run=4, time=10.217060
+=== ASYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 495
+
+Timestep 0: Velocidad promedio = 0.4768
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 9.863357 segundos
+===================================================
+EXITO ASYNC: np=8, run=5, time=9.863357
+=== ASYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 520
+
+Timestep 0: Velocidad promedio = 0.4865
+Timestep 1000: Velocidad promedio = 0.9231
+Timestep 2000: Velocidad promedio = 0.9231
+Timestep 3000: Velocidad promedio = 0.9231
+Timestep 4000: Velocidad promedio = 0.9231
+Timestep 4999: Velocidad promedio = 0.9231
+
+Tiempo total de ejecución: 10.627883 segundos
+===================================================
+EXITO ASYNC: np=10, run=1, time=10.627883
+=== ASYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 515
+
+Timestep 0: Velocidad promedio = 0.4816
+Timestep 1000: Velocidad promedio = 0.9417
+Timestep 2000: Velocidad promedio = 0.9417
+Timestep 3000: Velocidad promedio = 0.9417
+Timestep 4000: Velocidad promedio = 0.9417
+Timestep 4999: Velocidad promedio = 0.9417
+
+Tiempo total de ejecución: 19.858517 segundos
+===================================================
+EXITO ASYNC: np=10, run=2, time=19.858517
+=== ASYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 491
+
+Timestep 0: Velocidad promedio = 0.4766
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.007912 segundos
+===================================================
+EXITO ASYNC: np=10, run=3, time=20.007912
+=== ASYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 524
+
+Timestep 0: Velocidad promedio = 0.4809
+Timestep 1000: Velocidad promedio = 0.9084
+Timestep 2000: Velocidad promedio = 0.9084
+Timestep 3000: Velocidad promedio = 0.9084
+Timestep 4000: Velocidad promedio = 0.9084
+Timestep 4999: Velocidad promedio = 0.9084
+
+Tiempo total de ejecución: 10.626339 segundos
+===================================================
+EXITO ASYNC: np=10, run=4, time=10.626339
+=== ASYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 462
+
+Timestep 0: Velocidad promedio = 0.5390
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 11.096364 segundos
+===================================================
+EXITO ASYNC: np=10, run=5, time=11.096364
+=== ASYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1006
+
+Timestep 0: Velocidad promedio = 0.4821
+Timestep 1000: Velocidad promedio = 0.9881
+Timestep 2000: Velocidad promedio = 0.9881
+Timestep 3000: Velocidad promedio = 0.9881
+Timestep 4000: Velocidad promedio = 0.9881
+Timestep 4999: Velocidad promedio = 0.9881
+
+Tiempo total de ejecución: 1.122727 segundos
+===================================================
+EXITO ASYNC: np=2, run=1, time=1.122727
+=== ASYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 994
+
+Timestep 0: Velocidad promedio = 0.5151
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.894169 segundos
+===================================================
+EXITO ASYNC: np=2, run=2, time=0.894169
+=== ASYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1013
+
+Timestep 0: Velocidad promedio = 0.4985
+Timestep 1000: Velocidad promedio = 0.9743
+Timestep 2000: Velocidad promedio = 0.9743
+Timestep 3000: Velocidad promedio = 0.9743
+Timestep 4000: Velocidad promedio = 0.9743
+Timestep 4999: Velocidad promedio = 0.9743
+
+Tiempo total de ejecución: 1.090753 segundos
+===================================================
+EXITO ASYNC: np=2, run=3, time=1.090753
+=== ASYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 999
+
+Timestep 0: Velocidad promedio = 0.5035
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.431350 segundos
+===================================================
+EXITO ASYNC: np=2, run=4, time=1.431350
+=== ASYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 982
+
+Timestep 0: Velocidad promedio = 0.5132
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.983235 segundos
+===================================================
+EXITO ASYNC: np=2, run=5, time=0.983235
+=== ASYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1011
+
+Timestep 0: Velocidad promedio = 0.4946
+Timestep 1000: Velocidad promedio = 0.9782
+Timestep 2000: Velocidad promedio = 0.9782
+Timestep 3000: Velocidad promedio = 0.9782
+Timestep 4000: Velocidad promedio = 0.9782
+Timestep 4999: Velocidad promedio = 0.9782
+
+Tiempo total de ejecución: 1.220348 segundos
+===================================================
+EXITO ASYNC: np=4, run=1, time=1.220348
+=== ASYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 961
+
+Timestep 0: Velocidad promedio = 0.5172
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.879802 segundos
+===================================================
+EXITO ASYNC: np=4, run=2, time=0.879802
+=== ASYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 987
+
+Timestep 0: Velocidad promedio = 0.5187
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.192389 segundos
+===================================================
+EXITO ASYNC: np=4, run=3, time=1.192389
+=== ASYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1024
+
+Timestep 0: Velocidad promedio = 0.4814
+Timestep 1000: Velocidad promedio = 0.9531
+Timestep 2000: Velocidad promedio = 0.9531
+Timestep 3000: Velocidad promedio = 0.9531
+Timestep 4000: Velocidad promedio = 0.9531
+Timestep 4999: Velocidad promedio = 0.9531
+
+Tiempo total de ejecución: 1.019681 segundos
+===================================================
+EXITO ASYNC: np=4, run=4, time=1.019681
+=== ASYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 986
+
+Timestep 0: Velocidad promedio = 0.5122
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.938214 segundos
+===================================================
+EXITO ASYNC: np=4, run=5, time=0.938214
+=== ASYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1006
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 0.9881
+Timestep 2000: Velocidad promedio = 0.9881
+Timestep 3000: Velocidad promedio = 0.9881
+Timestep 4000: Velocidad promedio = 0.9881
+Timestep 4999: Velocidad promedio = 0.9881
+
+Tiempo total de ejecución: 1.708389 segundos
+===================================================
+EXITO ASYNC: np=6, run=1, time=1.708389
+=== ASYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1024
+
+Timestep 0: Velocidad promedio = 0.4854
+Timestep 1000: Velocidad promedio = 0.9531
+Timestep 2000: Velocidad promedio = 0.9531
+Timestep 3000: Velocidad promedio = 0.9531
+Timestep 4000: Velocidad promedio = 0.9531
+Timestep 4999: Velocidad promedio = 0.9531
+
+Tiempo total de ejecución: 1.411189 segundos
+===================================================
+EXITO ASYNC: np=6, run=2, time=1.411189
+=== ASYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1002
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 0.9960
+Timestep 2000: Velocidad promedio = 0.9960
+Timestep 3000: Velocidad promedio = 0.9960
+Timestep 4000: Velocidad promedio = 0.9960
+Timestep 4999: Velocidad promedio = 0.9960
+
+Tiempo total de ejecución: 1.446291 segundos
+===================================================
+EXITO ASYNC: np=6, run=3, time=1.446291
+=== ASYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 970
+
+Timestep 0: Velocidad promedio = 0.5216
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.346082 segundos
+===================================================
+EXITO ASYNC: np=6, run=4, time=1.346082
+=== ASYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1010
+
+Timestep 0: Velocidad promedio = 0.4941
+Timestep 1000: Velocidad promedio = 0.9802
+Timestep 2000: Velocidad promedio = 0.9802
+Timestep 3000: Velocidad promedio = 0.9802
+Timestep 4000: Velocidad promedio = 0.9802
+Timestep 4999: Velocidad promedio = 0.9802
+
+Tiempo total de ejecución: 1.659215 segundos
+===================================================
+EXITO ASYNC: np=6, run=5, time=1.659215
+=== ASYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 993
+
+Timestep 0: Velocidad promedio = 0.5428
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.376877 segundos
+===================================================
+EXITO ASYNC: np=8, run=1, time=10.376877
+=== ASYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 999
+
+Timestep 0: Velocidad promedio = 0.5055
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.267783 segundos
+===================================================
+EXITO ASYNC: np=8, run=2, time=10.267783
+=== ASYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 983
+
+Timestep 0: Velocidad promedio = 0.5056
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.077937 segundos
+===================================================
+EXITO ASYNC: np=8, run=3, time=10.077937
+=== ASYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1024
+
+Timestep 0: Velocidad promedio = 0.4883
+Timestep 1000: Velocidad promedio = 0.9531
+Timestep 2000: Velocidad promedio = 0.9531
+Timestep 3000: Velocidad promedio = 0.9531
+Timestep 4000: Velocidad promedio = 0.9531
+Timestep 4999: Velocidad promedio = 0.9531
+
+Tiempo total de ejecución: 10.130028 segundos
+===================================================
+EXITO ASYNC: np=8, run=4, time=10.130028
+=== ASYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1018
+
+Timestep 0: Velocidad promedio = 0.4862
+Timestep 1000: Velocidad promedio = 0.9646
+Timestep 2000: Velocidad promedio = 0.9646
+Timestep 3000: Velocidad promedio = 0.9646
+Timestep 4000: Velocidad promedio = 0.9646
+Timestep 4999: Velocidad promedio = 0.9646
+
+Tiempo total de ejecución: 10.353044 segundos
+===================================================
+EXITO ASYNC: np=8, run=5, time=10.353044
+=== ASYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 956
+
+Timestep 0: Velocidad promedio = 0.5105
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.081096 segundos
+===================================================
+EXITO ASYNC: np=10, run=1, time=20.081096
+=== ASYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1023
+
+Timestep 0: Velocidad promedio = 0.4868
+Timestep 1000: Velocidad promedio = 0.9550
+Timestep 2000: Velocidad promedio = 0.9550
+Timestep 3000: Velocidad promedio = 0.9550
+Timestep 4000: Velocidad promedio = 0.9550
+Timestep 4999: Velocidad promedio = 0.9550
+
+Tiempo total de ejecución: 10.598925 segundos
+===================================================
+EXITO ASYNC: np=10, run=2, time=10.598925
+=== ASYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 987
+
+Timestep 0: Velocidad promedio = 0.5106
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 12.910892 segundos
+===================================================
+EXITO ASYNC: np=10, run=3, time=12.910892
+=== ASYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1062
+
+Timestep 0: Velocidad promedio = 0.4746
+Timestep 1000: Velocidad promedio = 0.8832
+Timestep 2000: Velocidad promedio = 0.8832
+Timestep 3000: Velocidad promedio = 0.8832
+Timestep 4000: Velocidad promedio = 0.8832
+Timestep 4999: Velocidad promedio = 0.8832
+
+Tiempo total de ejecución: 11.206773 segundos
+===================================================
+EXITO ASYNC: np=10, run=4, time=11.206773
+=== ASYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 976
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 12.476944 segundos
+===================================================
+EXITO ASYNC: np=10, run=5, time=12.476944
+=== ASYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2011
+
+Timestep 0: Velocidad promedio = 0.4898
+Timestep 1000: Velocidad promedio = 0.9871
+Timestep 2000: Velocidad promedio = 0.9891
+Timestep 3000: Velocidad promedio = 0.9891
+Timestep 4000: Velocidad promedio = 0.9891
+Timestep 4999: Velocidad promedio = 0.9891
+
+Tiempo total de ejecución: 0.917361 segundos
+===================================================
+EXITO ASYNC: np=2, run=1, time=0.917361
+=== ASYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1932
+
+Timestep 0: Velocidad promedio = 0.5192
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.081021 segundos
+===================================================
+EXITO ASYNC: np=2, run=2, time=1.081021
+=== ASYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1995
+
+Timestep 0: Velocidad promedio = 0.4952
+Timestep 1000: Velocidad promedio = 0.9985
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.085890 segundos
+===================================================
+EXITO ASYNC: np=2, run=3, time=1.085890
+=== ASYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2022
+
+Timestep 0: Velocidad promedio = 0.5104
+Timestep 1000: Velocidad promedio = 0.9733
+Timestep 2000: Velocidad promedio = 0.9782
+Timestep 3000: Velocidad promedio = 0.9782
+Timestep 4000: Velocidad promedio = 0.9782
+Timestep 4999: Velocidad promedio = 0.9782
+
+Tiempo total de ejecución: 1.248535 segundos
+===================================================
+EXITO ASYNC: np=2, run=4, time=1.248535
+=== ASYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2030
+
+Timestep 0: Velocidad promedio = 0.5039
+Timestep 1000: Velocidad promedio = 0.9704
+Timestep 2000: Velocidad promedio = 0.9704
+Timestep 3000: Velocidad promedio = 0.9704
+Timestep 4000: Velocidad promedio = 0.9704
+Timestep 4999: Velocidad promedio = 0.9704
+
+Tiempo total de ejecución: 1.044793 segundos
+===================================================
+EXITO ASYNC: np=2, run=5, time=1.044793
+=== ASYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1984
+
+Timestep 0: Velocidad promedio = 0.4945
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.171157 segundos
+===================================================
+EXITO ASYNC: np=4, run=1, time=1.171157
+=== ASYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 2023
+
+Timestep 0: Velocidad promedio = 0.4968
+Timestep 1000: Velocidad promedio = 0.9723
+Timestep 2000: Velocidad promedio = 0.9773
+Timestep 3000: Velocidad promedio = 0.9773
+Timestep 4000: Velocidad promedio = 0.9773
+Timestep 4999: Velocidad promedio = 0.9773
+
+Tiempo total de ejecución: 0.863543 segundos
+===================================================
+EXITO ASYNC: np=4, run=2, time=0.863543
+=== ASYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1988
+
+Timestep 0: Velocidad promedio = 0.5126
+Timestep 1000: Velocidad promedio = 0.9814
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.004399 segundos
+===================================================
+EXITO ASYNC: np=4, run=3, time=1.004399
+=== ASYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1976
+
+Timestep 0: Velocidad promedio = 0.5116
+Timestep 1000: Velocidad promedio = 0.9970
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.039652 segundos
+===================================================
+EXITO ASYNC: np=4, run=4, time=1.039652
+=== ASYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1990
+
+Timestep 0: Velocidad promedio = 0.4935
+Timestep 1000: Velocidad promedio = 0.9884
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.716276 segundos
+===================================================
+EXITO ASYNC: np=4, run=5, time=0.716276
+=== ASYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 2061
+
+Timestep 0: Velocidad promedio = 0.4857
+Timestep 1000: Velocidad promedio = 0.9408
+Timestep 2000: Velocidad promedio = 0.9408
+Timestep 3000: Velocidad promedio = 0.9408
+Timestep 4000: Velocidad promedio = 0.9408
+Timestep 4999: Velocidad promedio = 0.9408
+
+Tiempo total de ejecución: 1.301455 segundos
+===================================================
+EXITO ASYNC: np=6, run=1, time=1.301455
+=== ASYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 2012
+
+Timestep 0: Velocidad promedio = 0.4955
+Timestep 1000: Velocidad promedio = 0.9796
+Timestep 2000: Velocidad promedio = 0.9881
+Timestep 3000: Velocidad promedio = 0.9881
+Timestep 4000: Velocidad promedio = 0.9881
+Timestep 4999: Velocidad promedio = 0.9881
+
+Tiempo total de ejecución: 1.344610 segundos
+===================================================
+EXITO ASYNC: np=6, run=2, time=1.344610
+=== ASYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 2017
+
+Timestep 0: Velocidad promedio = 0.4893
+Timestep 1000: Velocidad promedio = 0.9598
+Timestep 2000: Velocidad promedio = 0.9831
+Timestep 3000: Velocidad promedio = 0.9831
+Timestep 4000: Velocidad promedio = 0.9831
+Timestep 4999: Velocidad promedio = 0.9831
+
+Tiempo total de ejecución: 1.657292 segundos
+===================================================
+EXITO ASYNC: np=6, run=3, time=1.657292
+=== ASYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1953
+
+Timestep 0: Velocidad promedio = 0.5018
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.383522 segundos
+===================================================
+EXITO ASYNC: np=6, run=4, time=1.383522
+=== ASYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 2032
+
+Timestep 0: Velocidad promedio = 0.4808
+Timestep 1000: Velocidad promedio = 0.9547
+Timestep 2000: Velocidad promedio = 0.9685
+Timestep 3000: Velocidad promedio = 0.9685
+Timestep 4000: Velocidad promedio = 0.9685
+Timestep 4999: Velocidad promedio = 0.9685
+
+Tiempo total de ejecución: 1.814695 segundos
+===================================================
+EXITO ASYNC: np=6, run=5, time=1.814695
+=== ASYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1904
+
+Timestep 0: Velocidad promedio = 0.5320
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.826809 segundos
+===================================================
+EXITO ASYNC: np=8, run=1, time=10.826809
+=== ASYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 2017
+
+Timestep 0: Velocidad promedio = 0.4948
+Timestep 1000: Velocidad promedio = 0.9772
+Timestep 2000: Velocidad promedio = 0.9831
+Timestep 3000: Velocidad promedio = 0.9831
+Timestep 4000: Velocidad promedio = 0.9831
+Timestep 4999: Velocidad promedio = 0.9831
+
+Tiempo total de ejecución: 9.542080 segundos
+===================================================
+EXITO ASYNC: np=8, run=2, time=9.542080
+=== ASYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1984
+
+Timestep 0: Velocidad promedio = 0.4980
+Timestep 1000: Velocidad promedio = 0.9940
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.147836 segundos
+===================================================
+EXITO ASYNC: np=8, run=3, time=10.147836
+=== ASYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1952
+
+Timestep 0: Velocidad promedio = 0.5072
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 11.195995 segundos
+===================================================
+EXITO ASYNC: np=8, run=4, time=11.195995
+=== ASYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 2001
+
+Timestep 0: Velocidad promedio = 0.5137
+Timestep 1000: Velocidad promedio = 0.9915
+Timestep 2000: Velocidad promedio = 0.9990
+Timestep 3000: Velocidad promedio = 0.9990
+Timestep 4000: Velocidad promedio = 0.9990
+Timestep 4999: Velocidad promedio = 0.9990
+
+Tiempo total de ejecución: 10.172701 segundos
+===================================================
+EXITO ASYNC: np=8, run=5, time=10.172701
+=== ASYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2009
+
+Timestep 0: Velocidad promedio = 0.4958
+Timestep 1000: Velocidad promedio = 0.9861
+Timestep 2000: Velocidad promedio = 0.9910
+Timestep 3000: Velocidad promedio = 0.9910
+Timestep 4000: Velocidad promedio = 0.9910
+Timestep 4999: Velocidad promedio = 0.9910
+
+Tiempo total de ejecución: 16.129609 segundos
+===================================================
+EXITO ASYNC: np=10, run=1, time=16.129609
+=== ASYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2016
+
+Timestep 0: Velocidad promedio = 0.4901
+Timestep 1000: Velocidad promedio = 0.9613
+Timestep 2000: Velocidad promedio = 0.9841
+Timestep 3000: Velocidad promedio = 0.9841
+Timestep 4000: Velocidad promedio = 0.9841
+Timestep 4999: Velocidad promedio = 0.9841
+
+Tiempo total de ejecución: 10.809044 segundos
+===================================================
+EXITO ASYNC: np=10, run=2, time=10.809044
+=== ASYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2050
+
+Timestep 0: Velocidad promedio = 0.4898
+Timestep 1000: Velocidad promedio = 0.9512
+Timestep 2000: Velocidad promedio = 0.9512
+Timestep 3000: Velocidad promedio = 0.9512
+Timestep 4000: Velocidad promedio = 0.9512
+Timestep 4999: Velocidad promedio = 0.9512
+
+Tiempo total de ejecución: 12.413380 segundos
+===================================================
+EXITO ASYNC: np=10, run=3, time=12.413380
+=== ASYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2040
+
+Timestep 0: Velocidad promedio = 0.5039
+Timestep 1000: Velocidad promedio = 0.9608
+Timestep 2000: Velocidad promedio = 0.9608
+Timestep 3000: Velocidad promedio = 0.9608
+Timestep 4000: Velocidad promedio = 0.9608
+Timestep 4999: Velocidad promedio = 0.9608
+
+Tiempo total de ejecución: 14.046879 segundos
+===================================================
+EXITO ASYNC: np=10, run=4, time=14.046879
+=== ASYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2017
+
+Timestep 0: Velocidad promedio = 0.4898
+Timestep 1000: Velocidad promedio = 0.9727
+Timestep 2000: Velocidad promedio = 0.9831
+Timestep 3000: Velocidad promedio = 0.9831
+Timestep 4000: Velocidad promedio = 0.9831
+Timestep 4999: Velocidad promedio = 0.9831
+
+Tiempo total de ejecución: 14.255127 segundos
+===================================================
+EXITO ASYNC: np=10, run=5, time=14.255127
+=== ASYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 4004
+
+Timestep 0: Velocidad promedio = 0.4980
+Timestep 1000: Velocidad promedio = 0.9820
+Timestep 2000: Velocidad promedio = 0.9910
+Timestep 3000: Velocidad promedio = 0.9940
+Timestep 4000: Velocidad promedio = 0.9980
+Timestep 4999: Velocidad promedio = 0.9980
+
+Tiempo total de ejecución: 1.147949 segundos
+===================================================
+EXITO ASYNC: np=2, run=1, time=1.147949
+=== ASYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3967
+
+Timestep 0: Velocidad promedio = 0.5014
+Timestep 1000: Velocidad promedio = 0.9947
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.332958 segundos
+===================================================
+EXITO ASYNC: np=2, run=2, time=1.332958
+=== ASYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3887
+
+Timestep 0: Velocidad promedio = 0.5066
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.109806 segundos
+===================================================
+EXITO ASYNC: np=2, run=3, time=1.109806
+=== ASYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3958
+
+Timestep 0: Velocidad promedio = 0.5000
+Timestep 1000: Velocidad promedio = 0.9937
+Timestep 2000: Velocidad promedio = 0.9997
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.111524 segundos
+===================================================
+EXITO ASYNC: np=2, run=4, time=1.111524
+=== ASYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 4098
+
+Timestep 0: Velocidad promedio = 0.5010
+Timestep 1000: Velocidad promedio = 0.9522
+Timestep 2000: Velocidad promedio = 0.9522
+Timestep 3000: Velocidad promedio = 0.9522
+Timestep 4000: Velocidad promedio = 0.9522
+Timestep 4999: Velocidad promedio = 0.9522
+
+Tiempo total de ejecución: 1.484021 segundos
+===================================================
+EXITO ASYNC: np=2, run=5, time=1.484021
+=== ASYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4026
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 0.9836
+Timestep 2000: Velocidad promedio = 0.9861
+Timestep 3000: Velocidad promedio = 0.9871
+Timestep 4000: Velocidad promedio = 0.9871
+Timestep 4999: Velocidad promedio = 0.9871
+
+Tiempo total de ejecución: 1.156339 segundos
+===================================================
+EXITO ASYNC: np=4, run=1, time=1.156339
+=== ASYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 3957
+
+Timestep 0: Velocidad promedio = 0.5057
+Timestep 1000: Velocidad promedio = 0.9886
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.095592 segundos
+===================================================
+EXITO ASYNC: np=4, run=2, time=1.095592
+=== ASYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4003
+
+Timestep 0: Velocidad promedio = 0.5089
+Timestep 1000: Velocidad promedio = 0.9890
+Timestep 2000: Velocidad promedio = 0.9938
+Timestep 3000: Velocidad promedio = 0.9973
+Timestep 4000: Velocidad promedio = 0.9985
+Timestep 4999: Velocidad promedio = 0.9985
+
+Tiempo total de ejecución: 0.880708 segundos
+===================================================
+EXITO ASYNC: np=4, run=3, time=0.880708
+=== ASYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4019
+
+Timestep 0: Velocidad promedio = 0.4924
+Timestep 1000: Velocidad promedio = 0.9749
+Timestep 2000: Velocidad promedio = 0.9876
+Timestep 3000: Velocidad promedio = 0.9905
+Timestep 4000: Velocidad promedio = 0.9905
+Timestep 4999: Velocidad promedio = 0.9905
+
+Tiempo total de ejecución: 1.037876 segundos
+===================================================
+EXITO ASYNC: np=4, run=4, time=1.037876
+=== ASYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4003
+
+Timestep 0: Velocidad promedio = 0.4966
+Timestep 1000: Velocidad promedio = 0.9865
+Timestep 2000: Velocidad promedio = 0.9905
+Timestep 3000: Velocidad promedio = 0.9973
+Timestep 4000: Velocidad promedio = 0.9985
+Timestep 4999: Velocidad promedio = 0.9985
+
+Tiempo total de ejecución: 1.048055 segundos
+===================================================
+EXITO ASYNC: np=4, run=5, time=1.048055
+=== ASYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 3970
+
+Timestep 0: Velocidad promedio = 0.4985
+Timestep 1000: Velocidad promedio = 0.9922
+Timestep 2000: Velocidad promedio = 0.9985
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.211866 segundos
+===================================================
+EXITO ASYNC: np=6, run=1, time=1.211866
+=== ASYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4011
+
+Timestep 0: Velocidad promedio = 0.5046
+Timestep 1000: Velocidad promedio = 0.9788
+Timestep 2000: Velocidad promedio = 0.9835
+Timestep 3000: Velocidad promedio = 0.9918
+Timestep 4000: Velocidad promedio = 0.9945
+Timestep 4999: Velocidad promedio = 0.9945
+
+Tiempo total de ejecución: 1.398386 segundos
+===================================================
+EXITO ASYNC: np=6, run=2, time=1.398386
+=== ASYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4008
+
+Timestep 0: Velocidad promedio = 0.5062
+Timestep 1000: Velocidad promedio = 0.9823
+Timestep 2000: Velocidad promedio = 0.9953
+Timestep 3000: Velocidad promedio = 0.9960
+Timestep 4000: Velocidad promedio = 0.9960
+Timestep 4999: Velocidad promedio = 0.9960
+
+Tiempo total de ejecución: 1.442261 segundos
+===================================================
+EXITO ASYNC: np=6, run=3, time=1.442261
+=== ASYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 3980
+
+Timestep 0: Velocidad promedio = 0.5058
+Timestep 1000: Velocidad promedio = 0.9950
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.443554 segundos
+===================================================
+EXITO ASYNC: np=6, run=4, time=1.443554
+=== ASYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 3941
+
+Timestep 0: Velocidad promedio = 0.5022
+Timestep 1000: Velocidad promedio = 0.9947
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.303196 segundos
+===================================================
+EXITO ASYNC: np=6, run=5, time=1.303196
+=== ASYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3974
+
+Timestep 0: Velocidad promedio = 0.4987
+Timestep 1000: Velocidad promedio = 0.9932
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 9.846903 segundos
+===================================================
+EXITO ASYNC: np=8, run=1, time=9.846903
+=== ASYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 4094
+
+Timestep 0: Velocidad promedio = 0.4939
+Timestep 1000: Velocidad promedio = 0.9489
+Timestep 2000: Velocidad promedio = 0.9541
+Timestep 3000: Velocidad promedio = 0.9541
+Timestep 4000: Velocidad promedio = 0.9541
+Timestep 4999: Velocidad promedio = 0.9541
+
+Tiempo total de ejecución: 11.005197 segundos
+===================================================
+EXITO ASYNC: np=8, run=2, time=11.005197
+=== ASYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3981
+
+Timestep 0: Velocidad promedio = 0.5152
+Timestep 1000: Velocidad promedio = 0.9897
+Timestep 2000: Velocidad promedio = 0.9912
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 12.253931 segundos
+===================================================
+EXITO ASYNC: np=8, run=3, time=12.253931
+=== ASYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3991
+
+Timestep 0: Velocidad promedio = 0.4994
+Timestep 1000: Velocidad promedio = 0.9925
+Timestep 2000: Velocidad promedio = 0.9992
+Timestep 3000: Velocidad promedio = 0.9997
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.479990 segundos
+===================================================
+EXITO ASYNC: np=8, run=4, time=10.479990
+=== ASYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3985
+
+Timestep 0: Velocidad promedio = 0.5094
+Timestep 1000: Velocidad promedio = 0.9962
+Timestep 2000: Velocidad promedio = 0.9990
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 9.866032 segundos
+===================================================
+EXITO ASYNC: np=8, run=5, time=9.866032
+=== ASYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3975
+
+Timestep 0: Velocidad promedio = 0.5031
+Timestep 1000: Velocidad promedio = 0.9930
+Timestep 2000: Velocidad promedio = 0.9980
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 19.411045 segundos
+===================================================
+EXITO ASYNC: np=10, run=1, time=19.411045
+=== ASYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3980
+
+Timestep 0: Velocidad promedio = 0.5058
+Timestep 1000: Velocidad promedio = 0.9915
+Timestep 2000: Velocidad promedio = 0.9940
+Timestep 3000: Velocidad promedio = 0.9987
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 11.215043 segundos
+===================================================
+EXITO ASYNC: np=10, run=2, time=11.215043
+=== ASYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 4020
+
+Timestep 0: Velocidad promedio = 0.4905
+Timestep 1000: Velocidad promedio = 0.9841
+Timestep 2000: Velocidad promedio = 0.9900
+Timestep 3000: Velocidad promedio = 0.9900
+Timestep 4000: Velocidad promedio = 0.9900
+Timestep 4999: Velocidad promedio = 0.9900
+
+Tiempo total de ejecución: 20.189892 segundos
+===================================================
+EXITO ASYNC: np=10, run=3, time=20.189892
+=== ASYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 4058
+
+Timestep 0: Velocidad promedio = 0.4897
+Timestep 1000: Velocidad promedio = 0.9660
+Timestep 2000: Velocidad promedio = 0.9714
+Timestep 3000: Velocidad promedio = 0.9714
+Timestep 4000: Velocidad promedio = 0.9714
+Timestep 4999: Velocidad promedio = 0.9714
+
+Tiempo total de ejecución: 10.678370 segundos
+===================================================
+EXITO ASYNC: np=10, run=4, time=10.678370
+=== ASYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3991
+
+Timestep 0: Velocidad promedio = 0.5026
+Timestep 1000: Velocidad promedio = 0.9887
+Timestep 2000: Velocidad promedio = 0.9997
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 12.824028 segundos
+===================================================
+EXITO ASYNC: np=10, run=5, time=12.824028
+=== ASYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 5969
+
+Timestep 0: Velocidad promedio = 0.5053
+Timestep 1000: Velocidad promedio = 0.9905
+Timestep 2000: Velocidad promedio = 0.9988
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.940651 segundos
+===================================================
+EXITO ASYNC: np=2, run=1, time=0.940651
+=== ASYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 6021
+
+Timestep 0: Velocidad promedio = 0.4988
+Timestep 1000: Velocidad promedio = 0.9792
+Timestep 2000: Velocidad promedio = 0.9854
+Timestep 3000: Velocidad promedio = 0.9856
+Timestep 4000: Velocidad promedio = 0.9905
+Timestep 4999: Velocidad promedio = 0.9930
+
+Tiempo total de ejecución: 1.191946 segundos
+===================================================
+EXITO ASYNC: np=2, run=2, time=1.191946
+=== ASYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 6012
+
+Timestep 0: Velocidad promedio = 0.4922
+Timestep 1000: Velocidad promedio = 0.9782
+Timestep 2000: Velocidad promedio = 0.9839
+Timestep 3000: Velocidad promedio = 0.9882
+Timestep 4000: Velocidad promedio = 0.9942
+Timestep 4999: Velocidad promedio = 0.9960
+
+Tiempo total de ejecución: 1.048795 segundos
+===================================================
+EXITO ASYNC: np=2, run=3, time=1.048795
+=== ASYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 5959
+
+Timestep 0: Velocidad promedio = 0.5093
+Timestep 1000: Velocidad promedio = 0.9898
+Timestep 2000: Velocidad promedio = 0.9975
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 0.995453 segundos
+===================================================
+EXITO ASYNC: np=2, run=4, time=0.995453
+=== ASYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 6009
+
+Timestep 0: Velocidad promedio = 0.4986
+Timestep 1000: Velocidad promedio = 0.9799
+Timestep 2000: Velocidad promedio = 0.9842
+Timestep 3000: Velocidad promedio = 0.9847
+Timestep 4000: Velocidad promedio = 0.9887
+Timestep 4999: Velocidad promedio = 0.9935
+
+Tiempo total de ejecución: 1.183778 segundos
+===================================================
+EXITO ASYNC: np=2, run=5, time=1.183778
+=== ASYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6008
+
+Timestep 0: Velocidad promedio = 0.4942
+Timestep 1000: Velocidad promedio = 0.9887
+Timestep 2000: Velocidad promedio = 0.9943
+Timestep 3000: Velocidad promedio = 0.9943
+Timestep 4000: Velocidad promedio = 0.9943
+Timestep 4999: Velocidad promedio = 0.9955
+
+Tiempo total de ejecución: 0.847390 segundos
+===================================================
+EXITO ASYNC: np=4, run=1, time=0.847390
+=== ASYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6041
+
+Timestep 0: Velocidad promedio = 0.4966
+Timestep 1000: Velocidad promedio = 0.9808
+Timestep 2000: Velocidad promedio = 0.9851
+Timestep 3000: Velocidad promedio = 0.9864
+Timestep 4000: Velocidad promedio = 0.9864
+Timestep 4999: Velocidad promedio = 0.9864
+
+Tiempo total de ejecución: 1.034447 segundos
+===================================================
+EXITO ASYNC: np=4, run=2, time=1.034447
+=== ASYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 5994
+
+Timestep 0: Velocidad promedio = 0.5045
+Timestep 1000: Velocidad promedio = 0.9821
+Timestep 2000: Velocidad promedio = 0.9893
+Timestep 3000: Velocidad promedio = 0.9963
+Timestep 4000: Velocidad promedio = 0.9963
+Timestep 4999: Velocidad promedio = 0.9978
+
+Tiempo total de ejecución: 1.172719 segundos
+===================================================
+EXITO ASYNC: np=4, run=3, time=1.172719
+=== ASYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6040
+
+Timestep 0: Velocidad promedio = 0.5000
+Timestep 1000: Velocidad promedio = 0.9783
+Timestep 2000: Velocidad promedio = 0.9826
+Timestep 3000: Velocidad promedio = 0.9868
+Timestep 4000: Velocidad promedio = 0.9868
+Timestep 4999: Velocidad promedio = 0.9868
+
+Tiempo total de ejecución: 0.968049 segundos
+===================================================
+EXITO ASYNC: np=4, run=4, time=0.968049
+=== ASYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6075
+
+Timestep 0: Velocidad promedio = 0.4933
+Timestep 1000: Velocidad promedio = 0.9694
+Timestep 2000: Velocidad promedio = 0.9742
+Timestep 3000: Velocidad promedio = 0.9745
+Timestep 4000: Velocidad promedio = 0.9753
+Timestep 4999: Velocidad promedio = 0.9753
+
+Tiempo total de ejecución: 1.052057 segundos
+===================================================
+EXITO ASYNC: np=4, run=5, time=1.052057
+=== ASYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 5956
+
+Timestep 0: Velocidad promedio = 0.5030
+Timestep 1000: Velocidad promedio = 0.9896
+Timestep 2000: Velocidad promedio = 0.9961
+Timestep 3000: Velocidad promedio = 0.9961
+Timestep 4000: Velocidad promedio = 0.9993
+Timestep 4999: Velocidad promedio = 0.9993
+
+Tiempo total de ejecución: 1.131038 segundos
+===================================================
+EXITO ASYNC: np=6, run=1, time=1.131038
+=== ASYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6019
+
+Timestep 0: Velocidad promedio = 0.4978
+Timestep 1000: Velocidad promedio = 0.9837
+Timestep 2000: Velocidad promedio = 0.9859
+Timestep 3000: Velocidad promedio = 0.9907
+Timestep 4000: Velocidad promedio = 0.9907
+Timestep 4999: Velocidad promedio = 0.9925
+
+Tiempo total de ejecución: 1.719657 segundos
+===================================================
+EXITO ASYNC: np=6, run=2, time=1.719657
+=== ASYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6054
+
+Timestep 0: Velocidad promedio = 0.5050
+Timestep 1000: Velocidad promedio = 0.9756
+Timestep 2000: Velocidad promedio = 0.9780
+Timestep 3000: Velocidad promedio = 0.9822
+Timestep 4000: Velocidad promedio = 0.9822
+Timestep 4999: Velocidad promedio = 0.9822
+
+Tiempo total de ejecución: 1.408564 segundos
+===================================================
+EXITO ASYNC: np=6, run=3, time=1.408564
+=== ASYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 5969
+
+Timestep 0: Velocidad promedio = 0.5036
+Timestep 1000: Velocidad promedio = 0.9966
+Timestep 2000: Velocidad promedio = 0.9983
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.370641 segundos
+===================================================
+EXITO ASYNC: np=6, run=4, time=1.370641
+=== ASYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6105
+
+Timestep 0: Velocidad promedio = 0.4876
+Timestep 1000: Velocidad promedio = 0.9648
+Timestep 2000: Velocidad promedio = 0.9656
+Timestep 3000: Velocidad promedio = 0.9656
+Timestep 4000: Velocidad promedio = 0.9656
+Timestep 4999: Velocidad promedio = 0.9656
+
+Tiempo total de ejecución: 1.958876 segundos
+===================================================
+EXITO ASYNC: np=6, run=5, time=1.958876
+=== ASYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5898
+
+Timestep 0: Velocidad promedio = 0.5112
+Timestep 1000: Velocidad promedio = 0.9947
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.743134 segundos
+===================================================
+EXITO ASYNC: np=8, run=1, time=10.743134
+=== ASYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 6140
+
+Timestep 0: Velocidad promedio = 0.4881
+Timestep 1000: Velocidad promedio = 0.9482
+Timestep 2000: Velocidad promedio = 0.9495
+Timestep 3000: Velocidad promedio = 0.9544
+Timestep 4000: Velocidad promedio = 0.9544
+Timestep 4999: Velocidad promedio = 0.9544
+
+Tiempo total de ejecución: 11.012935 segundos
+===================================================
+EXITO ASYNC: np=8, run=2, time=11.012935
+=== ASYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 6089
+
+Timestep 0: Velocidad promedio = 0.4846
+Timestep 1000: Velocidad promedio = 0.9657
+Timestep 2000: Velocidad promedio = 0.9708
+Timestep 3000: Velocidad promedio = 0.9708
+Timestep 4000: Velocidad promedio = 0.9708
+Timestep 4999: Velocidad promedio = 0.9708
+
+Tiempo total de ejecución: 11.090453 segundos
+===================================================
+EXITO ASYNC: np=8, run=3, time=11.090453
+=== ASYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 6091
+
+Timestep 0: Velocidad promedio = 0.4927
+Timestep 1000: Velocidad promedio = 0.9640
+Timestep 2000: Velocidad promedio = 0.9693
+Timestep 3000: Velocidad promedio = 0.9701
+Timestep 4000: Velocidad promedio = 0.9701
+Timestep 4999: Velocidad promedio = 0.9701
+
+Tiempo total de ejecución: 13.325971 segundos
+===================================================
+EXITO ASYNC: np=8, run=4, time=13.325971
+=== ASYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5964
+
+Timestep 0: Velocidad promedio = 0.5070
+Timestep 1000: Velocidad promedio = 0.9925
+Timestep 2000: Velocidad promedio = 0.9955
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 9.688842 segundos
+===================================================
+EXITO ASYNC: np=8, run=5, time=9.688842
+=== ASYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5957
+
+Timestep 0: Velocidad promedio = 0.5029
+Timestep 1000: Velocidad promedio = 0.9819
+Timestep 2000: Velocidad promedio = 0.9940
+Timestep 3000: Velocidad promedio = 0.9958
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 19.961783 segundos
+===================================================
+EXITO ASYNC: np=10, run=1, time=19.961783
+=== ASYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5904
+
+Timestep 0: Velocidad promedio = 0.5041
+Timestep 1000: Velocidad promedio = 0.9966
+Timestep 2000: Velocidad promedio = 0.9986
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 13.437118 segundos
+===================================================
+EXITO ASYNC: np=10, run=2, time=13.437118
+=== ASYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5982
+
+Timestep 0: Velocidad promedio = 0.5020
+Timestep 1000: Velocidad promedio = 0.9856
+Timestep 2000: Velocidad promedio = 0.9973
+Timestep 3000: Velocidad promedio = 0.9987
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 10.849295 segundos
+===================================================
+EXITO ASYNC: np=10, run=3, time=10.849295
+=== ASYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5985
+
+Timestep 0: Velocidad promedio = 0.5068
+Timestep 1000: Velocidad promedio = 0.9781
+Timestep 2000: Velocidad promedio = 0.9861
+Timestep 3000: Velocidad promedio = 0.9893
+Timestep 4000: Velocidad promedio = 0.9935
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.254907 segundos
+===================================================
+EXITO ASYNC: np=10, run=4, time=20.254907
+=== ASYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (ASÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5910
+
+Timestep 0: Velocidad promedio = 0.5071
+Timestep 1000: Velocidad promedio = 0.9983
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 13.282865 segundos
+===================================================
+EXITO ASYNC: np=10, run=5, time=13.282865
+=== SYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 479
+
+Timestep 0: Velocidad promedio = 0.5240
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.590490 segundos
+===================================================
+EXITO SYNC: np=2, run=1, time=1.590490
+=== SYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 519
+
+Timestep 0: Velocidad promedio = 0.4663
+Timestep 1000: Velocidad promedio = 0.9268
+Timestep 2000: Velocidad promedio = 0.9268
+Timestep 3000: Velocidad promedio = 0.9268
+Timestep 4000: Velocidad promedio = 0.9268
+Timestep 4999: Velocidad promedio = 0.9268
+
+Tiempo total de ejecución: 1.428083 segundos
+===================================================
+EXITO SYNC: np=2, run=2, time=1.428083
+=== SYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 473
+
+Timestep 0: Velocidad promedio = 0.5243
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.576351 segundos
+===================================================
+EXITO SYNC: np=2, run=3, time=1.576351
+=== SYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 476
+
+Timestep 0: Velocidad promedio = 0.5273
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.685542 segundos
+===================================================
+EXITO SYNC: np=2, run=4, time=1.685542
+=== SYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 503
+
+Timestep 0: Velocidad promedio = 0.5050
+Timestep 1000: Velocidad promedio = 0.9881
+Timestep 2000: Velocidad promedio = 0.9881
+Timestep 3000: Velocidad promedio = 0.9881
+Timestep 4000: Velocidad promedio = 0.9881
+Timestep 4999: Velocidad promedio = 0.9881
+
+Tiempo total de ejecución: 1.596897 segundos
+===================================================
+EXITO SYNC: np=2, run=5, time=1.596897
+=== SYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 496
+
+Timestep 0: Velocidad promedio = 0.5121
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.821593 segundos
+===================================================
+EXITO SYNC: np=4, run=1, time=1.821593
+=== SYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 463
+
+Timestep 0: Velocidad promedio = 0.5508
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.748866 segundos
+===================================================
+EXITO SYNC: np=4, run=2, time=1.748866
+=== SYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 496
+
+Timestep 0: Velocidad promedio = 0.5161
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.743124 segundos
+===================================================
+EXITO SYNC: np=4, run=3, time=1.743124
+=== SYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 495
+
+Timestep 0: Velocidad promedio = 0.5071
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.935719 segundos
+===================================================
+EXITO SYNC: np=4, run=4, time=1.935719
+=== SYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 531
+
+Timestep 0: Velocidad promedio = 0.4595
+Timestep 1000: Velocidad promedio = 0.8832
+Timestep 2000: Velocidad promedio = 0.8832
+Timestep 3000: Velocidad promedio = 0.8832
+Timestep 4000: Velocidad promedio = 0.8832
+Timestep 4999: Velocidad promedio = 0.8832
+
+Tiempo total de ejecución: 1.795047 segundos
+===================================================
+EXITO SYNC: np=4, run=5, time=1.795047
+=== SYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 499
+
+Timestep 0: Velocidad promedio = 0.5050
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.527676 segundos
+===================================================
+EXITO SYNC: np=6, run=1, time=2.527676
+=== SYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 516
+
+Timestep 0: Velocidad promedio = 0.4884
+Timestep 1000: Velocidad promedio = 0.9380
+Timestep 2000: Velocidad promedio = 0.9380
+Timestep 3000: Velocidad promedio = 0.9380
+Timestep 4000: Velocidad promedio = 0.9380
+Timestep 4999: Velocidad promedio = 0.9380
+
+Tiempo total de ejecución: 2.114662 segundos
+===================================================
+EXITO SYNC: np=6, run=2, time=2.114662
+=== SYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 499
+
+Timestep 0: Velocidad promedio = 0.5050
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.508477 segundos
+===================================================
+EXITO SYNC: np=6, run=3, time=2.508477
+=== SYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 495
+
+Timestep 0: Velocidad promedio = 0.5232
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.853102 segundos
+===================================================
+EXITO SYNC: np=6, run=4, time=1.853102
+=== SYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 483
+
+Timestep 0: Velocidad promedio = 0.5321
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.311627 segundos
+===================================================
+EXITO SYNC: np=6, run=5, time=2.311627
+=== SYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 528
+
+Timestep 0: Velocidad promedio = 0.4773
+Timestep 1000: Velocidad promedio = 0.8939
+Timestep 2000: Velocidad promedio = 0.8939
+Timestep 3000: Velocidad promedio = 0.8939
+Timestep 4000: Velocidad promedio = 0.8939
+Timestep 4999: Velocidad promedio = 0.8939
+
+Tiempo total de ejecución: 17.980977 segundos
+===================================================
+EXITO SYNC: np=8, run=1, time=17.980977
+=== SYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 512
+
+Timestep 0: Velocidad promedio = 0.5098
+Timestep 1000: Velocidad promedio = 0.9531
+Timestep 2000: Velocidad promedio = 0.9531
+Timestep 3000: Velocidad promedio = 0.9531
+Timestep 4000: Velocidad promedio = 0.9531
+Timestep 4999: Velocidad promedio = 0.9531
+
+Tiempo total de ejecución: 17.787992 segundos
+===================================================
+EXITO SYNC: np=8, run=2, time=17.787992
+=== SYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 541
+
+Timestep 0: Velocidad promedio = 0.4566
+Timestep 1000: Velocidad promedio = 0.8484
+Timestep 2000: Velocidad promedio = 0.8484
+Timestep 3000: Velocidad promedio = 0.8484
+Timestep 4000: Velocidad promedio = 0.8484
+Timestep 4999: Velocidad promedio = 0.8484
+
+Tiempo total de ejecución: 15.279746 segundos
+===================================================
+EXITO SYNC: np=8, run=3, time=15.279746
+=== SYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 469
+
+Timestep 0: Velocidad promedio = 0.5032
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 15.147716 segundos
+===================================================
+EXITO SYNC: np=8, run=4, time=15.147716
+=== SYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 502
+
+Timestep 0: Velocidad promedio = 0.4681
+Timestep 1000: Velocidad promedio = 0.9920
+Timestep 2000: Velocidad promedio = 0.9920
+Timestep 3000: Velocidad promedio = 0.9920
+Timestep 4000: Velocidad promedio = 0.9920
+Timestep 4999: Velocidad promedio = 0.9920
+
+Tiempo total de ejecución: 15.418897 segundos
+===================================================
+EXITO SYNC: np=8, run=5, time=15.418897
+=== SYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 515
+
+Timestep 0: Velocidad promedio = 0.4893
+Timestep 1000: Velocidad promedio = 0.9417
+Timestep 2000: Velocidad promedio = 0.9417
+Timestep 3000: Velocidad promedio = 0.9417
+Timestep 4000: Velocidad promedio = 0.9417
+Timestep 4999: Velocidad promedio = 0.9417
+
+Tiempo total de ejecución: 18.135866 segundos
+===================================================
+EXITO SYNC: np=10, run=1, time=18.135866
+=== SYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 480
+
+Timestep 0: Velocidad promedio = 0.5000
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 24.503118 segundos
+===================================================
+EXITO SYNC: np=10, run=2, time=24.503118
+=== SYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 508
+
+Timestep 0: Velocidad promedio = 0.5000
+Timestep 1000: Velocidad promedio = 0.9685
+Timestep 2000: Velocidad promedio = 0.9685
+Timestep 3000: Velocidad promedio = 0.9685
+Timestep 4000: Velocidad promedio = 0.9685
+Timestep 4999: Velocidad promedio = 0.9685
+
+Tiempo total de ejecución: 21.600411 segundos
+===================================================
+EXITO SYNC: np=10, run=3, time=21.600411
+=== SYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 541
+
+Timestep 0: Velocidad promedio = 0.4898
+Timestep 1000: Velocidad promedio = 0.8484
+Timestep 2000: Velocidad promedio = 0.8484
+Timestep 3000: Velocidad promedio = 0.8484
+Timestep 4000: Velocidad promedio = 0.8484
+Timestep 4999: Velocidad promedio = 0.8484
+
+Tiempo total de ejecución: 21.814025 segundos
+===================================================
+EXITO SYNC: np=10, run=4, time=21.814025
+=== SYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 1000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 502
+
+Timestep 0: Velocidad promedio = 0.5040
+Timestep 1000: Velocidad promedio = 0.9920
+Timestep 2000: Velocidad promedio = 0.9920
+Timestep 3000: Velocidad promedio = 0.9920
+Timestep 4000: Velocidad promedio = 0.9920
+Timestep 4999: Velocidad promedio = 0.9920
+
+Tiempo total de ejecución: 23.404019 segundos
+===================================================
+EXITO SYNC: np=10, run=5, time=23.404019
+=== SYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 969
+
+Timestep 0: Velocidad promedio = 0.5026
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.512368 segundos
+===================================================
+EXITO SYNC: np=2, run=1, time=1.512368
+=== SYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 997
+
+Timestep 0: Velocidad promedio = 0.5015
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.467402 segundos
+===================================================
+EXITO SYNC: np=2, run=2, time=1.467402
+=== SYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1036
+
+Timestep 0: Velocidad promedio = 0.4759
+Timestep 1000: Velocidad promedio = 0.9305
+Timestep 2000: Velocidad promedio = 0.9305
+Timestep 3000: Velocidad promedio = 0.9305
+Timestep 4000: Velocidad promedio = 0.9305
+Timestep 4999: Velocidad promedio = 0.9305
+
+Tiempo total de ejecución: 1.672278 segundos
+===================================================
+EXITO SYNC: np=2, run=3, time=1.672278
+=== SYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 995
+
+Timestep 0: Velocidad promedio = 0.4995
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.562974 segundos
+===================================================
+EXITO SYNC: np=2, run=4, time=1.562974
+=== SYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1001
+
+Timestep 0: Velocidad promedio = 0.4975
+Timestep 1000: Velocidad promedio = 0.9980
+Timestep 2000: Velocidad promedio = 0.9980
+Timestep 3000: Velocidad promedio = 0.9980
+Timestep 4000: Velocidad promedio = 0.9980
+Timestep 4999: Velocidad promedio = 0.9980
+
+Tiempo total de ejecución: 1.818944 segundos
+===================================================
+EXITO SYNC: np=2, run=5, time=1.818944
+=== SYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 980
+
+Timestep 0: Velocidad promedio = 0.5092
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.741550 segundos
+===================================================
+EXITO SYNC: np=4, run=1, time=1.741550
+=== SYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 971
+
+Timestep 0: Velocidad promedio = 0.5191
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.866047 segundos
+===================================================
+EXITO SYNC: np=4, run=2, time=1.866047
+=== SYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1025
+
+Timestep 0: Velocidad promedio = 0.5102
+Timestep 1000: Velocidad promedio = 0.9512
+Timestep 2000: Velocidad promedio = 0.9512
+Timestep 3000: Velocidad promedio = 0.9512
+Timestep 4000: Velocidad promedio = 0.9512
+Timestep 4999: Velocidad promedio = 0.9512
+
+Tiempo total de ejecución: 1.665513 segundos
+===================================================
+EXITO SYNC: np=4, run=3, time=1.665513
+=== SYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1036
+
+Timestep 0: Velocidad promedio = 0.4913
+Timestep 1000: Velocidad promedio = 0.9305
+Timestep 2000: Velocidad promedio = 0.9305
+Timestep 3000: Velocidad promedio = 0.9305
+Timestep 4000: Velocidad promedio = 0.9305
+Timestep 4999: Velocidad promedio = 0.9305
+
+Tiempo total de ejecución: 1.638240 segundos
+===================================================
+EXITO SYNC: np=4, run=4, time=1.638240
+=== SYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 939
+
+Timestep 0: Velocidad promedio = 0.5059
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.715328 segundos
+===================================================
+EXITO SYNC: np=4, run=5, time=1.715328
+=== SYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 974
+
+Timestep 0: Velocidad promedio = 0.5298
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 9.399664 segundos
+===================================================
+EXITO SYNC: np=6, run=1, time=9.399664
+=== SYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 973
+
+Timestep 0: Velocidad promedio = 0.5149
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.280820 segundos
+===================================================
+EXITO SYNC: np=6, run=2, time=2.280820
+=== SYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 987
+
+Timestep 0: Velocidad promedio = 0.5035
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.644187 segundos
+===================================================
+EXITO SYNC: np=6, run=3, time=2.644187
+=== SYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 968
+
+Timestep 0: Velocidad promedio = 0.5300
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.080466 segundos
+===================================================
+EXITO SYNC: np=6, run=4, time=2.080466
+=== SYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 975
+
+Timestep 0: Velocidad promedio = 0.5097
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.272001 segundos
+===================================================
+EXITO SYNC: np=6, run=5, time=2.272001
+=== SYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1017
+
+Timestep 0: Velocidad promedio = 0.4857
+Timestep 1000: Velocidad promedio = 0.9666
+Timestep 2000: Velocidad promedio = 0.9666
+Timestep 3000: Velocidad promedio = 0.9666
+Timestep 4000: Velocidad promedio = 0.9666
+Timestep 4999: Velocidad promedio = 0.9666
+
+Tiempo total de ejecución: 17.586648 segundos
+===================================================
+EXITO SYNC: np=8, run=1, time=17.586648
+=== SYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1009
+
+Timestep 0: Velocidad promedio = 0.4866
+Timestep 1000: Velocidad promedio = 0.9822
+Timestep 2000: Velocidad promedio = 0.9822
+Timestep 3000: Velocidad promedio = 0.9822
+Timestep 4000: Velocidad promedio = 0.9822
+Timestep 4999: Velocidad promedio = 0.9822
+
+Tiempo total de ejecución: 15.807051 segundos
+===================================================
+EXITO SYNC: np=8, run=2, time=15.807051
+=== SYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1003
+
+Timestep 0: Velocidad promedio = 0.5015
+Timestep 1000: Velocidad promedio = 0.9940
+Timestep 2000: Velocidad promedio = 0.9940
+Timestep 3000: Velocidad promedio = 0.9940
+Timestep 4000: Velocidad promedio = 0.9940
+Timestep 4999: Velocidad promedio = 0.9940
+
+Tiempo total de ejecución: 14.715041 segundos
+===================================================
+EXITO SYNC: np=8, run=3, time=14.715041
+=== SYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 959
+
+Timestep 0: Velocidad promedio = 0.5172
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 15.148207 segundos
+===================================================
+EXITO SYNC: np=8, run=4, time=15.148207
+=== SYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1006
+
+Timestep 0: Velocidad promedio = 0.4831
+Timestep 1000: Velocidad promedio = 0.9881
+Timestep 2000: Velocidad promedio = 0.9881
+Timestep 3000: Velocidad promedio = 0.9881
+Timestep 4000: Velocidad promedio = 0.9881
+Timestep 4999: Velocidad promedio = 0.9881
+
+Tiempo total de ejecución: 15.956995 segundos
+===================================================
+EXITO SYNC: np=8, run=5, time=15.956995
+=== SYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1015
+
+Timestep 0: Velocidad promedio = 0.4828
+Timestep 1000: Velocidad promedio = 0.9704
+Timestep 2000: Velocidad promedio = 0.9704
+Timestep 3000: Velocidad promedio = 0.9704
+Timestep 4000: Velocidad promedio = 0.9704
+Timestep 4999: Velocidad promedio = 0.9704
+
+Tiempo total de ejecución: 20.391848 segundos
+===================================================
+EXITO SYNC: np=10, run=1, time=20.391848
+=== SYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1007
+
+Timestep 0: Velocidad promedio = 0.5045
+Timestep 1000: Velocidad promedio = 0.9861
+Timestep 2000: Velocidad promedio = 0.9861
+Timestep 3000: Velocidad promedio = 0.9861
+Timestep 4000: Velocidad promedio = 0.9861
+Timestep 4999: Velocidad promedio = 0.9861
+
+Tiempo total de ejecución: 20.761929 segundos
+===================================================
+EXITO SYNC: np=10, run=2, time=20.761929
+=== SYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 980
+
+Timestep 0: Velocidad promedio = 0.4888
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 17.619162 segundos
+===================================================
+EXITO SYNC: np=10, run=3, time=17.619162
+=== SYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 970
+
+Timestep 0: Velocidad promedio = 0.5340
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 17.107026 segundos
+===================================================
+EXITO SYNC: np=10, run=4, time=17.107026
+=== SYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 2000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1033
+
+Timestep 0: Velocidad promedio = 0.4724
+Timestep 1000: Velocidad promedio = 0.9361
+Timestep 2000: Velocidad promedio = 0.9361
+Timestep 3000: Velocidad promedio = 0.9361
+Timestep 4000: Velocidad promedio = 0.9361
+Timestep 4999: Velocidad promedio = 0.9361
+
+Tiempo total de ejecución: 20.336225 segundos
+===================================================
+EXITO SYNC: np=10, run=5, time=20.336225
+=== SYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2003
+
+Timestep 0: Velocidad promedio = 0.5057
+Timestep 1000: Velocidad promedio = 0.9900
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 0.9970
+Timestep 4000: Velocidad promedio = 0.9970
+Timestep 4999: Velocidad promedio = 0.9970
+
+Tiempo total de ejecución: 1.553580 segundos
+===================================================
+EXITO SYNC: np=2, run=1, time=1.553580
+=== SYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2003
+
+Timestep 0: Velocidad promedio = 0.5062
+Timestep 1000: Velocidad promedio = 0.9870
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 0.9970
+Timestep 4000: Velocidad promedio = 0.9970
+Timestep 4999: Velocidad promedio = 0.9970
+
+Tiempo total de ejecución: 1.613225 segundos
+===================================================
+EXITO SYNC: np=2, run=2, time=1.613225
+=== SYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1967
+
+Timestep 0: Velocidad promedio = 0.5064
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.717555 segundos
+===================================================
+EXITO SYNC: np=2, run=3, time=1.717555
+=== SYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 2016
+
+Timestep 0: Velocidad promedio = 0.4901
+Timestep 1000: Velocidad promedio = 0.9836
+Timestep 2000: Velocidad promedio = 0.9841
+Timestep 3000: Velocidad promedio = 0.9841
+Timestep 4000: Velocidad promedio = 0.9841
+Timestep 4999: Velocidad promedio = 0.9841
+
+Tiempo total de ejecución: 1.697476 segundos
+===================================================
+EXITO SYNC: np=2, run=4, time=1.697476
+=== SYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 1972
+
+Timestep 0: Velocidad promedio = 0.4939
+Timestep 1000: Velocidad promedio = 0.9731
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.764412 segundos
+===================================================
+EXITO SYNC: np=2, run=5, time=1.764412
+=== SYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1994
+
+Timestep 0: Velocidad promedio = 0.4970
+Timestep 1000: Velocidad promedio = 0.9915
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.019950 segundos
+===================================================
+EXITO SYNC: np=4, run=1, time=2.019950
+=== SYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 2040
+
+Timestep 0: Velocidad promedio = 0.4701
+Timestep 1000: Velocidad promedio = 0.9525
+Timestep 2000: Velocidad promedio = 0.9608
+Timestep 3000: Velocidad promedio = 0.9608
+Timestep 4000: Velocidad promedio = 0.9608
+Timestep 4999: Velocidad promedio = 0.9608
+
+Tiempo total de ejecución: 1.837791 segundos
+===================================================
+EXITO SYNC: np=4, run=2, time=1.837791
+=== SYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1961
+
+Timestep 0: Velocidad promedio = 0.5186
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.667521 segundos
+===================================================
+EXITO SYNC: np=4, run=3, time=1.667521
+=== SYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1967
+
+Timestep 0: Velocidad promedio = 0.5119
+Timestep 1000: Velocidad promedio = 0.9980
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.832493 segundos
+===================================================
+EXITO SYNC: np=4, run=4, time=1.832493
+=== SYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 1960
+
+Timestep 0: Velocidad promedio = 0.5087
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.937924 segundos
+===================================================
+EXITO SYNC: np=4, run=5, time=1.937924
+=== SYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1976
+
+Timestep 0: Velocidad promedio = 0.4828
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.117384 segundos
+===================================================
+EXITO SYNC: np=6, run=1, time=2.117384
+=== SYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1967
+
+Timestep 0: Velocidad promedio = 0.5058
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.073425 segundos
+===================================================
+EXITO SYNC: np=6, run=2, time=2.073425
+=== SYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1938
+
+Timestep 0: Velocidad promedio = 0.5227
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.278046 segundos
+===================================================
+EXITO SYNC: np=6, run=3, time=2.278046
+=== SYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1996
+
+Timestep 0: Velocidad promedio = 0.5000
+Timestep 1000: Velocidad promedio = 0.9905
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.330814 segundos
+===================================================
+EXITO SYNC: np=6, run=4, time=2.330814
+=== SYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 1978
+
+Timestep 0: Velocidad promedio = 0.5116
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.824550 segundos
+===================================================
+EXITO SYNC: np=6, run=5, time=1.824550
+=== SYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 2036
+
+Timestep 0: Velocidad promedio = 0.4887
+Timestep 1000: Velocidad promedio = 0.9617
+Timestep 2000: Velocidad promedio = 0.9646
+Timestep 3000: Velocidad promedio = 0.9646
+Timestep 4000: Velocidad promedio = 0.9646
+Timestep 4999: Velocidad promedio = 0.9646
+
+Tiempo total de ejecución: 15.573951 segundos
+===================================================
+EXITO SYNC: np=8, run=1, time=15.573951
+=== SYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1995
+
+Timestep 0: Velocidad promedio = 0.5148
+Timestep 1000: Velocidad promedio = 0.9905
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 14.698945 segundos
+===================================================
+EXITO SYNC: np=8, run=2, time=14.698945
+=== SYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 2027
+
+Timestep 0: Velocidad promedio = 0.4993
+Timestep 1000: Velocidad promedio = 0.9734
+Timestep 2000: Velocidad promedio = 0.9734
+Timestep 3000: Velocidad promedio = 0.9734
+Timestep 4000: Velocidad promedio = 0.9734
+Timestep 4999: Velocidad promedio = 0.9734
+
+Tiempo total de ejecución: 15.553006 segundos
+===================================================
+EXITO SYNC: np=8, run=3, time=15.553006
+=== SYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 2014
+
+Timestep 0: Velocidad promedio = 0.5050
+Timestep 1000: Velocidad promedio = 0.9826
+Timestep 2000: Velocidad promedio = 0.9861
+Timestep 3000: Velocidad promedio = 0.9861
+Timestep 4000: Velocidad promedio = 0.9861
+Timestep 4999: Velocidad promedio = 0.9861
+
+Tiempo total de ejecución: 15.517777 segundos
+===================================================
+EXITO SYNC: np=8, run=4, time=15.517777
+=== SYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 1966
+
+Timestep 0: Velocidad promedio = 0.5025
+Timestep 1000: Velocidad promedio = 0.9934
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.181028 segundos
+===================================================
+EXITO SYNC: np=8, run=5, time=16.181028
+=== SYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2015
+
+Timestep 0: Velocidad promedio = 0.5102
+Timestep 1000: Velocidad promedio = 0.9851
+Timestep 2000: Velocidad promedio = 0.9851
+Timestep 3000: Velocidad promedio = 0.9851
+Timestep 4000: Velocidad promedio = 0.9851
+Timestep 4999: Velocidad promedio = 0.9851
+
+Tiempo total de ejecución: 18.373589 segundos
+===================================================
+EXITO SYNC: np=10, run=1, time=18.373589
+=== SYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 1979
+
+Timestep 0: Velocidad promedio = 0.5033
+Timestep 1000: Velocidad promedio = 0.9788
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.471095 segundos
+===================================================
+EXITO SYNC: np=10, run=2, time=20.471095
+=== SYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2034
+
+Timestep 0: Velocidad promedio = 0.4813
+Timestep 1000: Velocidad promedio = 0.9666
+Timestep 2000: Velocidad promedio = 0.9666
+Timestep 3000: Velocidad promedio = 0.9666
+Timestep 4000: Velocidad promedio = 0.9666
+Timestep 4999: Velocidad promedio = 0.9666
+
+Tiempo total de ejecución: 18.259856 segundos
+===================================================
+EXITO SYNC: np=10, run=3, time=18.259856
+=== SYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2040
+
+Timestep 0: Velocidad promedio = 0.4882
+Timestep 1000: Velocidad promedio = 0.9608
+Timestep 2000: Velocidad promedio = 0.9608
+Timestep 3000: Velocidad promedio = 0.9608
+Timestep 4000: Velocidad promedio = 0.9608
+Timestep 4999: Velocidad promedio = 0.9608
+
+Tiempo total de ejecución: 18.511963 segundos
+===================================================
+EXITO SYNC: np=10, run=4, time=18.511963
+=== SYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 4000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 2039
+
+Timestep 0: Velocidad promedio = 0.4944
+Timestep 1000: Velocidad promedio = 0.9617
+Timestep 2000: Velocidad promedio = 0.9617
+Timestep 3000: Velocidad promedio = 0.9617
+Timestep 4000: Velocidad promedio = 0.9617
+Timestep 4999: Velocidad promedio = 0.9617
+
+Tiempo total de ejecución: 17.158857 segundos
+===================================================
+EXITO SYNC: np=10, run=5, time=17.158857
+=== SYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3888
+
+Timestep 0: Velocidad promedio = 0.5170
+Timestep 1000: Velocidad promedio = 0.9997
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.579710 segundos
+===================================================
+EXITO SYNC: np=2, run=1, time=1.579710
+=== SYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3960
+
+Timestep 0: Velocidad promedio = 0.5088
+Timestep 1000: Velocidad promedio = 0.9909
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.778040 segundos
+===================================================
+EXITO SYNC: np=2, run=2, time=1.778040
+=== SYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3945
+
+Timestep 0: Velocidad promedio = 0.4971
+Timestep 1000: Velocidad promedio = 0.9992
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.707879 segundos
+===================================================
+EXITO SYNC: np=2, run=3, time=1.707879
+=== SYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 4008
+
+Timestep 0: Velocidad promedio = 0.5117
+Timestep 1000: Velocidad promedio = 0.9910
+Timestep 2000: Velocidad promedio = 0.9930
+Timestep 3000: Velocidad promedio = 0.9948
+Timestep 4000: Velocidad promedio = 0.9960
+Timestep 4999: Velocidad promedio = 0.9960
+
+Tiempo total de ejecución: 1.663351 segundos
+===================================================
+EXITO SYNC: np=2, run=4, time=1.663351
+=== SYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 3965
+
+Timestep 0: Velocidad promedio = 0.4951
+Timestep 1000: Velocidad promedio = 0.9803
+Timestep 2000: Velocidad promedio = 0.9909
+Timestep 3000: Velocidad promedio = 0.9990
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.581451 segundos
+===================================================
+EXITO SYNC: np=2, run=5, time=1.581451
+=== SYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 3981
+
+Timestep 0: Velocidad promedio = 0.5092
+Timestep 1000: Velocidad promedio = 0.9897
+Timestep 2000: Velocidad promedio = 0.9967
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.675747 segundos
+===================================================
+EXITO SYNC: np=4, run=1, time=1.675747
+=== SYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4020
+
+Timestep 0: Velocidad promedio = 0.5037
+Timestep 1000: Velocidad promedio = 0.9826
+Timestep 2000: Velocidad promedio = 0.9900
+Timestep 3000: Velocidad promedio = 0.9900
+Timestep 4000: Velocidad promedio = 0.9900
+Timestep 4999: Velocidad promedio = 0.9900
+
+Tiempo total de ejecución: 1.915005 segundos
+===================================================
+EXITO SYNC: np=4, run=2, time=1.915005
+=== SYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 3933
+
+Timestep 0: Velocidad promedio = 0.5080
+Timestep 1000: Velocidad promedio = 0.9939
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.632599 segundos
+===================================================
+EXITO SYNC: np=4, run=3, time=1.632599
+=== SYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4029
+
+Timestep 0: Velocidad promedio = 0.4880
+Timestep 1000: Velocidad promedio = 0.9814
+Timestep 2000: Velocidad promedio = 0.9824
+Timestep 3000: Velocidad promedio = 0.9856
+Timestep 4000: Velocidad promedio = 0.9856
+Timestep 4999: Velocidad promedio = 0.9856
+
+Tiempo total de ejecución: 2.031351 segundos
+===================================================
+EXITO SYNC: np=4, run=4, time=2.031351
+=== SYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 4007
+
+Timestep 0: Velocidad promedio = 0.5034
+Timestep 1000: Velocidad promedio = 0.9885
+Timestep 2000: Velocidad promedio = 0.9925
+Timestep 3000: Velocidad promedio = 0.9938
+Timestep 4000: Velocidad promedio = 0.9965
+Timestep 4999: Velocidad promedio = 0.9965
+
+Tiempo total de ejecución: 1.868995 segundos
+===================================================
+EXITO SYNC: np=4, run=5, time=1.868995
+=== SYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4012
+
+Timestep 0: Velocidad promedio = 0.4920
+Timestep 1000: Velocidad promedio = 0.9748
+Timestep 2000: Velocidad promedio = 0.9831
+Timestep 3000: Velocidad promedio = 0.9900
+Timestep 4000: Velocidad promedio = 0.9940
+Timestep 4999: Velocidad promedio = 0.9940
+
+Tiempo total de ejecución: 2.256577 segundos
+===================================================
+EXITO SYNC: np=6, run=1, time=2.256577
+=== SYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4143
+
+Timestep 0: Velocidad promedio = 0.4704
+Timestep 1000: Velocidad promedio = 0.9310
+Timestep 2000: Velocidad promedio = 0.9310
+Timestep 3000: Velocidad promedio = 0.9310
+Timestep 4000: Velocidad promedio = 0.9310
+Timestep 4999: Velocidad promedio = 0.9310
+
+Tiempo total de ejecución: 2.058812 segundos
+===================================================
+EXITO SYNC: np=6, run=2, time=2.058812
+=== SYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4067
+
+Timestep 0: Velocidad promedio = 0.5004
+Timestep 1000: Velocidad promedio = 0.9575
+Timestep 2000: Velocidad promedio = 0.9671
+Timestep 3000: Velocidad promedio = 0.9671
+Timestep 4000: Velocidad promedio = 0.9671
+Timestep 4999: Velocidad promedio = 0.9671
+
+Tiempo total de ejecución: 1.967881 segundos
+===================================================
+EXITO SYNC: np=6, run=3, time=1.967881
+=== SYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 4071
+
+Timestep 0: Velocidad promedio = 0.4950
+Timestep 1000: Velocidad promedio = 0.9575
+Timestep 2000: Velocidad promedio = 0.9624
+Timestep 3000: Velocidad promedio = 0.9651
+Timestep 4000: Velocidad promedio = 0.9651
+Timestep 4999: Velocidad promedio = 0.9651
+
+Tiempo total de ejecución: 1.971271 segundos
+===================================================
+EXITO SYNC: np=6, run=4, time=1.971271
+=== SYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 3982
+
+Timestep 0: Velocidad promedio = 0.5098
+Timestep 1000: Velocidad promedio = 0.9922
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 2.588757 segundos
+===================================================
+EXITO SYNC: np=6, run=5, time=2.588757
+=== SYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3959
+
+Timestep 0: Velocidad promedio = 0.5039
+Timestep 1000: Velocidad promedio = 0.9970
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.952454 segundos
+===================================================
+EXITO SYNC: np=8, run=1, time=16.952454
+=== SYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3990
+
+Timestep 0: Velocidad promedio = 0.4972
+Timestep 1000: Velocidad promedio = 0.9857
+Timestep 2000: Velocidad promedio = 0.9970
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 15.232814 segundos
+===================================================
+EXITO SYNC: np=8, run=2, time=15.232814
+=== SYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3934
+
+Timestep 0: Velocidad promedio = 0.5170
+Timestep 1000: Velocidad promedio = 0.9964
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.127360 segundos
+===================================================
+EXITO SYNC: np=8, run=3, time=16.127360
+=== SYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3988
+
+Timestep 0: Velocidad promedio = 0.4965
+Timestep 1000: Velocidad promedio = 0.9814
+Timestep 2000: Velocidad promedio = 0.9865
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 15.783591 segundos
+===================================================
+EXITO SYNC: np=8, run=4, time=15.783591
+=== SYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 3935
+
+Timestep 0: Velocidad promedio = 0.5146
+Timestep 1000: Velocidad promedio = 0.9972
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.630577 segundos
+===================================================
+EXITO SYNC: np=8, run=5, time=16.630577
+=== SYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3980
+
+Timestep 0: Velocidad promedio = 0.4962
+Timestep 1000: Velocidad promedio = 0.9834
+Timestep 2000: Velocidad promedio = 0.9947
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 18.645805 segundos
+===================================================
+EXITO SYNC: np=10, run=1, time=18.645805
+=== SYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3954
+
+Timestep 0: Velocidad promedio = 0.5086
+Timestep 1000: Velocidad promedio = 0.9985
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 17.802643 segundos
+===================================================
+EXITO SYNC: np=10, run=2, time=17.802643
+=== SYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 3963
+
+Timestep 0: Velocidad promedio = 0.5095
+Timestep 1000: Velocidad promedio = 0.9899
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 18.122301 segundos
+===================================================
+EXITO SYNC: np=10, run=3, time=18.122301
+=== SYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 4052
+
+Timestep 0: Velocidad promedio = 0.4970
+Timestep 1000: Velocidad promedio = 0.9701
+Timestep 2000: Velocidad promedio = 0.9719
+Timestep 3000: Velocidad promedio = 0.9743
+Timestep 4000: Velocidad promedio = 0.9743
+Timestep 4999: Velocidad promedio = 0.9743
+
+Tiempo total de ejecución: 19.605153 segundos
+===================================================
+EXITO SYNC: np=10, run=4, time=19.605153
+=== SYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 8000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 4013
+
+Timestep 0: Velocidad promedio = 0.5021
+Timestep 1000: Velocidad promedio = 0.9793
+Timestep 2000: Velocidad promedio = 0.9903
+Timestep 3000: Velocidad promedio = 0.9918
+Timestep 4000: Velocidad promedio = 0.9935
+Timestep 4999: Velocidad promedio = 0.9935
+
+Tiempo total de ejecución: 20.376833 segundos
+===================================================
+EXITO SYNC: np=10, run=5, time=20.376833
+=== SYNC: np=2, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 6012
+
+Timestep 0: Velocidad promedio = 0.5091
+Timestep 1000: Velocidad promedio = 0.9770
+Timestep 2000: Velocidad promedio = 0.9804
+Timestep 3000: Velocidad promedio = 0.9865
+Timestep 4000: Velocidad promedio = 0.9952
+Timestep 4999: Velocidad promedio = 0.9960
+
+Tiempo total de ejecución: 1.610929 segundos
+===================================================
+EXITO SYNC: np=2, run=1, time=1.610929
+=== SYNC: np=2, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 5983
+
+Timestep 0: Velocidad promedio = 0.4992
+Timestep 1000: Velocidad promedio = 0.9921
+Timestep 2000: Velocidad promedio = 0.9962
+Timestep 3000: Velocidad promedio = 0.9990
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.561087 segundos
+===================================================
+EXITO SYNC: np=2, run=2, time=1.561087
+=== SYNC: np=2, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 5972
+
+Timestep 0: Velocidad promedio = 0.5007
+Timestep 1000: Velocidad promedio = 0.9844
+Timestep 2000: Velocidad promedio = 0.9905
+Timestep 3000: Velocidad promedio = 0.9958
+Timestep 4000: Velocidad promedio = 0.9958
+Timestep 4999: Velocidad promedio = 0.9961
+
+Tiempo total de ejecución: 2.097399 segundos
+===================================================
+EXITO SYNC: np=2, run=3, time=2.097399
+=== SYNC: np=2, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 6002
+
+Timestep 0: Velocidad promedio = 0.5013
+Timestep 1000: Velocidad promedio = 0.9900
+Timestep 2000: Velocidad promedio = 0.9943
+Timestep 3000: Velocidad promedio = 0.9947
+Timestep 4000: Velocidad promedio = 0.9985
+Timestep 4999: Velocidad promedio = 0.9985
+
+Tiempo total de ejecución: 1.906676 segundos
+===================================================
+EXITO SYNC: np=2, run=4, time=1.906676
+=== SYNC: np=2, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 2, Total de carros: 5944
+
+Timestep 0: Velocidad promedio = 0.5067
+Timestep 1000: Velocidad promedio = 0.9886
+Timestep 2000: Velocidad promedio = 0.9918
+Timestep 3000: Velocidad promedio = 0.9971
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.533148 segundos
+===================================================
+EXITO SYNC: np=2, run=5, time=1.533148
+=== SYNC: np=4, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6070
+
+Timestep 0: Velocidad promedio = 0.4936
+Timestep 1000: Velocidad promedio = 0.9694
+Timestep 2000: Velocidad promedio = 0.9705
+Timestep 3000: Velocidad promedio = 0.9712
+Timestep 4000: Velocidad promedio = 0.9748
+Timestep 4999: Velocidad promedio = 0.9769
+
+Tiempo total de ejecución: 1.589809 segundos
+===================================================
+EXITO SYNC: np=4, run=1, time=1.589809
+=== SYNC: np=4, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6058
+
+Timestep 0: Velocidad promedio = 0.4942
+Timestep 1000: Velocidad promedio = 0.9779
+Timestep 2000: Velocidad promedio = 0.9809
+Timestep 3000: Velocidad promedio = 0.9809
+Timestep 4000: Velocidad promedio = 0.9809
+Timestep 4999: Velocidad promedio = 0.9809
+
+Tiempo total de ejecución: 1.818010 segundos
+===================================================
+EXITO SYNC: np=4, run=2, time=1.818010
+=== SYNC: np=4, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 5922
+
+Timestep 0: Velocidad promedio = 0.5093
+Timestep 1000: Velocidad promedio = 0.9973
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 1.843666 segundos
+===================================================
+EXITO SYNC: np=4, run=3, time=1.843666
+=== SYNC: np=4, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 5970
+
+Timestep 0: Velocidad promedio = 0.5075
+Timestep 1000: Velocidad promedio = 0.9811
+Timestep 2000: Velocidad promedio = 0.9874
+Timestep 3000: Velocidad promedio = 0.9906
+Timestep 4000: Velocidad promedio = 0.9953
+Timestep 4999: Velocidad promedio = 0.9980
+
+Tiempo total de ejecución: 1.923542 segundos
+===================================================
+EXITO SYNC: np=4, run=4, time=1.923542
+=== SYNC: np=4, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 4, Total de carros: 6024
+
+Timestep 0: Velocidad promedio = 0.4972
+Timestep 1000: Velocidad promedio = 0.9759
+Timestep 2000: Velocidad promedio = 0.9802
+Timestep 3000: Velocidad promedio = 0.9859
+Timestep 4000: Velocidad promedio = 0.9864
+Timestep 4999: Velocidad promedio = 0.9895
+
+Tiempo total de ejecución: 1.726131 segundos
+===================================================
+EXITO SYNC: np=4, run=5, time=1.726131
+=== SYNC: np=6, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6091
+
+Timestep 0: Velocidad promedio = 0.4907
+Timestep 1000: Velocidad promedio = 0.9670
+Timestep 2000: Velocidad promedio = 0.9701
+Timestep 3000: Velocidad promedio = 0.9701
+Timestep 4000: Velocidad promedio = 0.9701
+Timestep 4999: Velocidad promedio = 0.9701
+
+Tiempo total de ejecución: 1.971473 segundos
+===================================================
+EXITO SYNC: np=6, run=1, time=1.971473
+=== SYNC: np=6, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6007
+
+Timestep 0: Velocidad promedio = 0.4979
+Timestep 1000: Velocidad promedio = 0.9775
+Timestep 2000: Velocidad promedio = 0.9895
+Timestep 3000: Velocidad promedio = 0.9910
+Timestep 4000: Velocidad promedio = 0.9910
+Timestep 4999: Velocidad promedio = 0.9927
+
+Tiempo total de ejecución: 2.346205 segundos
+===================================================
+EXITO SYNC: np=6, run=2, time=2.346205
+=== SYNC: np=6, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6055
+
+Timestep 0: Velocidad promedio = 0.5002
+Timestep 1000: Velocidad promedio = 0.9746
+Timestep 2000: Velocidad promedio = 0.9774
+Timestep 3000: Velocidad promedio = 0.9777
+Timestep 4000: Velocidad promedio = 0.9818
+Timestep 4999: Velocidad promedio = 0.9818
+
+Tiempo total de ejecución: 2.077823 segundos
+===================================================
+EXITO SYNC: np=6, run=3, time=2.077823
+=== SYNC: np=6, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6075
+
+Timestep 0: Velocidad promedio = 0.4958
+Timestep 1000: Velocidad promedio = 0.9679
+Timestep 2000: Velocidad promedio = 0.9723
+Timestep 3000: Velocidad promedio = 0.9753
+Timestep 4000: Velocidad promedio = 0.9753
+Timestep 4999: Velocidad promedio = 0.9753
+
+Tiempo total de ejecución: 2.272965 segundos
+===================================================
+EXITO SYNC: np=6, run=4, time=2.272965
+=== SYNC: np=6, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 6, Total de carros: 6070
+
+Timestep 0: Velocidad promedio = 0.4956
+Timestep 1000: Velocidad promedio = 0.9710
+Timestep 2000: Velocidad promedio = 0.9753
+Timestep 3000: Velocidad promedio = 0.9769
+Timestep 4000: Velocidad promedio = 0.9769
+Timestep 4999: Velocidad promedio = 0.9769
+
+Tiempo total de ejecución: 2.041483 segundos
+===================================================
+EXITO SYNC: np=6, run=5, time=2.041483
+=== SYNC: np=8, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 6048
+
+Timestep 0: Velocidad promedio = 0.4927
+Timestep 1000: Velocidad promedio = 0.9721
+Timestep 2000: Velocidad promedio = 0.9793
+Timestep 3000: Velocidad promedio = 0.9825
+Timestep 4000: Velocidad promedio = 0.9841
+Timestep 4999: Velocidad promedio = 0.9841
+
+Tiempo total de ejecución: 15.879676 segundos
+===================================================
+EXITO SYNC: np=8, run=1, time=15.879676
+=== SYNC: np=8, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5959
+
+Timestep 0: Velocidad promedio = 0.5083
+Timestep 1000: Velocidad promedio = 0.9893
+Timestep 2000: Velocidad promedio = 0.9911
+Timestep 3000: Velocidad promedio = 0.9916
+Timestep 4000: Velocidad promedio = 0.9975
+Timestep 4999: Velocidad promedio = 0.9993
+
+Tiempo total de ejecución: 16.125443 segundos
+===================================================
+EXITO SYNC: np=8, run=2, time=16.125443
+=== SYNC: np=8, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5918
+
+Timestep 0: Velocidad promedio = 0.5049
+Timestep 1000: Velocidad promedio = 1.0000
+Timestep 2000: Velocidad promedio = 1.0000
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.234757 segundos
+===================================================
+EXITO SYNC: np=8, run=3, time=16.234757
+=== SYNC: np=8, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5967
+
+Timestep 0: Velocidad promedio = 0.4991
+Timestep 1000: Velocidad promedio = 0.9894
+Timestep 2000: Velocidad promedio = 0.9960
+Timestep 3000: Velocidad promedio = 1.0000
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.471326 segundos
+===================================================
+EXITO SYNC: np=8, run=4, time=16.471326
+=== SYNC: np=8, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 8, Total de carros: 5985
+
+Timestep 0: Velocidad promedio = 0.4957
+Timestep 1000: Velocidad promedio = 0.9911
+Timestep 2000: Velocidad promedio = 0.9921
+Timestep 3000: Velocidad promedio = 0.9945
+Timestep 4000: Velocidad promedio = 0.9985
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 16.503932 segundos
+===================================================
+EXITO SYNC: np=8, run=5, time=16.503932
+=== SYNC: np=10, run=1 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5978
+
+Timestep 0: Velocidad promedio = 0.5020
+Timestep 1000: Velocidad promedio = 0.9849
+Timestep 2000: Velocidad promedio = 0.9900
+Timestep 3000: Velocidad promedio = 0.9931
+Timestep 4000: Velocidad promedio = 1.0000
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.351977 segundos
+===================================================
+EXITO SYNC: np=10, run=1, time=20.351977
+=== SYNC: np=10, run=2 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 6023
+
+Timestep 0: Velocidad promedio = 0.5066
+Timestep 1000: Velocidad promedio = 0.9879
+Timestep 2000: Velocidad promedio = 0.9920
+Timestep 3000: Velocidad promedio = 0.9924
+Timestep 4000: Velocidad promedio = 0.9924
+Timestep 4999: Velocidad promedio = 0.9924
+
+Tiempo total de ejecución: 17.353178 segundos
+===================================================
+EXITO SYNC: np=10, run=2, time=17.353178
+=== SYNC: np=10, run=3 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 6013
+
+Timestep 0: Velocidad promedio = 0.4969
+Timestep 1000: Velocidad promedio = 0.9882
+Timestep 2000: Velocidad promedio = 0.9905
+Timestep 3000: Velocidad promedio = 0.9905
+Timestep 4000: Velocidad promedio = 0.9917
+Timestep 4999: Velocidad promedio = 0.9947
+
+Tiempo total de ejecución: 17.707926 segundos
+===================================================
+EXITO SYNC: np=10, run=3, time=17.707926
+=== SYNC: np=10, run=4 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 6078
+
+Timestep 0: Velocidad promedio = 0.4990
+Timestep 1000: Velocidad promedio = 0.9640
+Timestep 2000: Velocidad promedio = 0.9719
+Timestep 3000: Velocidad promedio = 0.9743
+Timestep 4000: Velocidad promedio = 0.9743
+Timestep 4999: Velocidad promedio = 0.9743
+
+Tiempo total de ejecución: 20.322930 segundos
+===================================================
+EXITO SYNC: np=10, run=4, time=20.322930
+=== SYNC: np=10, run=5 ===
+Simulación de Tráfico - Versión Paralela MPI (SÍNCRONA)
+N = 12000, Timesteps = 5000, Densidad = 0.50
+Procesos = 10, Total de carros: 5969
+
+Timestep 0: Velocidad promedio = 0.4999
+Timestep 1000: Velocidad promedio = 0.9854
+Timestep 2000: Velocidad promedio = 0.9879
+Timestep 3000: Velocidad promedio = 0.9903
+Timestep 4000: Velocidad promedio = 0.9995
+Timestep 4999: Velocidad promedio = 1.0000
+
+Tiempo total de ejecución: 20.374004 segundos
+===================================================
+EXITO SYNC: np=10, run=5, time=20.374004
+Fin de pruebas: Tue Dec  2 03:53:57 UTC 2025
