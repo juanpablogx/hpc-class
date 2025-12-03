@@ -232,39 +232,3 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
     return 0;
 }
-
-/* ============================================================================
- * COMPARACIÓN: COMUNICACIÓN SÍNCRONA vs ASÍNCRONA
- * ============================================================================
- * 
- * ASÍNCRONA (MPI_Isend/Irecv + MPI_Waitall):
- * -------------------------------------------
- * ✓ Todos envían simultáneamente
- * ✓ NO hay riesgo de deadlock
- * ✓ Mejor rendimiento (las comunicaciones se solapan)
- * ✓ Más complejo de programar
- * 
- * Analogía: "Enviar cartas"
- * - Pones las cartas en el buzón y sigues trabajando
- * - Eventualmente verificas si llegaron las respuestas
- * 
- * SÍNCRONA (MPI_Send/Recv):
- * -------------------------
- * ✗ Bloquea hasta que la comunicación completa
- * ✗ RIESGO DE DEADLOCK si todos hacen Send primero
- * ✗ Menos eficiente (comunicaciones secuenciales)
- * ✓ Más simple de entender
- * 
- * Analogía: "Llamada telefónica"
- * - Te quedas esperando hasta que la otra persona conteste
- * - Si todos llaman al mismo tiempo, nadie contesta → DEADLOCK!
- * 
- * SOLUCIÓN AL DEADLOCK en modo síncrono:
- * --------------------------------------
- * Procesos PARES:  Send → Recv → Send → Recv
- * Procesos IMPARES: Recv → Send → Recv → Send
- * 
- * Así siempre hay alguien esperando recibir cuando otro envía.
- * 
- * ============================================================================
- */

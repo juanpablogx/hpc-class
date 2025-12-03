@@ -12,7 +12,7 @@ void update_road(int *road_old, int *road_new, int N, int *moved_cars) {
     *moved_cars = 0;
     
     for (int i = 0; i < N; i++) {
-        int next = (i + 1) % N;  // Periodic boundary conditions
+        int next = (i + 1) % N;
         
         if (road_old[i] == 1) {
             // Si hay un carro y el espacio adelante está vacío, se mueve
